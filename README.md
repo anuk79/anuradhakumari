@@ -1,4 +1,4 @@
-# [Anuradha Kumari](www.anuradhakumari.com)
+# [Anuradha Kumari](https://www.anuradhakumari.com)
 This is my personal website. Currently work in progress.
 
 ## Tech stack
