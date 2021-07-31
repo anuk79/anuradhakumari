@@ -16,7 +16,7 @@ export async function getStaticProps() {
 
 export default () => {
   return (
-    <div className="py-8 sm:py-28">
+    <div className="py-8 sm:py-28 max-w-3xl">
       <h1 className="pt-4 pb-8 text-3xl">Contact</h1>
       <div className="text-lg">
         Feel free to {' '}

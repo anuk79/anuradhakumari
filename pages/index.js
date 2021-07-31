@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import getPageDetails from '../queries/getPageDetails';
 
 export async function getStaticProps() {
@@ -27,6 +28,12 @@ export default function Home({ about }) {
       <p className="text-center py-2 text-lg">
         {about.details}
       </p>
+      <p className="text-center pt-20 text-xl">
+        <div>Note:</div>
+        I am in process of moving all my data to the website. But meanwhile, check my all talks and blogs at {' '}
+        <Link href="https://anuk79.netlify.app/">anuk79.netlify.com</Link>
+      </p>
+
     </section>
   );
 }
