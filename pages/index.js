@@ -1,30 +1,32 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import getPageDetails from '../queries/getPageDetails';
 
-export default function Home() {
+export async function getStaticProps() {
+  const pageDetails = await getPageDetails();
+
+  return {
+    props: {
+      ...pageDetails
+    },
+  };
+}
+
+export default function Home({ about }) {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Anuradha Kumari</title>
-        <meta name="description" content="Personal website of Anuradha Kumari" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Anuradha Kumari
-        </h1>
-
-        <p className={styles.description}>
-          Frontend developer, working as a frontend consultant at Passionate People, Media Developer Expert at Cloudinary, Accessibility Advocate
-        </p>
-        
-      </main>
-
-      <footer className={styles.footer}>
-        Created by Anuradha Kumari, hosted on Vercel
-      </footer>
-    </div>
-  )
+    <section className="flex flex-wrap items-center justify-center max-w-2xl py-16 sm:py-28">
+      <div className="flex items-center justify-center">
+        <figure>
+          <img width="70" height="70" 
+            src={about.person.photo.url} alt="" className="rounded-full" 
+          lazy="loaded" />
+        </figure>
+        <h1 className="px-4 text-3xl">{about.title}</h1> 
+      </div>
+      <p className="text-center py-8 text-lg">
+        {about.subtitle}
+      </p>
+      <p className="text-center py-2 text-lg">
+        {about.details}
+      </p>
+    </section>
+  );
 }
