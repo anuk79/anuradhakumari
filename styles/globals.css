@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -7,10 +11,23 @@ body {
 }
 
 a {
-  color: inherit;
+  color: #1e6bb8;
+  text-decoration: underline;
+}
+
+a:hover, a:focus {
   text-decoration: none;
 }
 
 * {
   box-sizing: border-box;
+}
+
+header {
+  background-color: #159957;
+  background-image: linear-gradient(120deg , #155799, #159957);
+}
+
+header a {
+  color: #fff;
 }
