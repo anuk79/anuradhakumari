@@ -27,7 +27,7 @@ export async function getStaticProps() {
 
 const Talks = ({ pastTalks = [], futureTalks = [] }) => {
   return (
-    <div className="py-8 max-w-3xl ">
+    <div className="py-8">
       <Head>
         <title>Anuradha Kumari - Tech talks</title>
       </Head>

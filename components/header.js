@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 function Header({ navLinks = [] }) {
   return (
-    <header className="px-4  sm:px-10 py-6 sticky top-0 z-4">
+    <header className="px-4 sm:px-10 lg:px-28 py-6 sticky top-0 z-4 text-base sm:text-lg">
         <nav className="flex items-center justify-between flex-wrap space-x-4">
           <Link href="/">
             <a>

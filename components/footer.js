@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 function Footer({ navLinks = [] }) {
   return (
-    <footer className="px-4 sm:px-10 py-4 bg-white">
+    <footer className="px-4 sm:px-10 lg:px-28 py-4 bg-white">
         <div className="mt-8 border-t border-gray-300 pt-8 md:flex md:items-center md:justify-between">
           <div className="flex space-x-6 md:order-2">
             {navLinks.length > 0 && (

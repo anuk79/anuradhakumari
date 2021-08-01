@@ -9,6 +9,10 @@
   @apply my-6;
 }
 
+.markdown blockquote {
+  @apply my-6;
+}
+
 .markdown h2 {
   @apply text-3xl mt-12 mb-4 leading-snug;
 }
@@ -17,11 +21,16 @@
   @apply text-2xl mt-8 mb-4 leading-snug;
 }
 
-.markdown  pre {
+.markdown pre {
   overflow: auto;
   background-color: #f8f8f8;
   padding: 10px 10px;
   border: 1px solid darkgray;
+}
+
+.markdown ul,
+.markdown ol {
+  list-style: revert;
 }
 
 .details-md {
