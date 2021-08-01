@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import getPageDetails from '../../queries/getPageDetails';
 
 export async function getStaticProps() {
@@ -13,6 +14,9 @@ export async function getStaticProps() {
 const About = ({ about = {} }) => {
   return (
     <div className="py-8">
+      <Head>
+        <title>Anuradha Kumari - About</title>
+      </Head>
       <h1>About me</h1>
       <div>
         Hii, my name is {about.title}.

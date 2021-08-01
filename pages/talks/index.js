@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Link from "next/link";
 import TalkCard from '../../components/talkCard';
 import getPageDetails from '../../queries/getPageDetails';
@@ -27,6 +28,9 @@ export async function getStaticProps() {
 const Talks = ({ pastTalks = [], futureTalks = [] }) => {
   return (
     <div className="py-8 max-w-3xl ">
+      <Head>
+        <title>Anuradha Kumari - Tech talks</title>
+      </Head>
       <h1 className="text-3xl pt-4 font-bold">Tech talks</h1>
       <div className="py-4">
         I am passionate about exploring new technologies and sharing the knowledge and experience with the community. 

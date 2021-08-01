@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Head from 'next/head';
 import Image from 'next/image';
 import { getBlogs, getBlogPost } from '../../queries/getBlogs';
 import getPageDetails from '../../queries/getPageDetails';
@@ -30,7 +31,9 @@ export async function getStaticPaths() {
 const Post = ({ post }) => {
   return (
     <div className="py-2 min-h-screen max-w-3xl">
-      
+      <Head>
+        <title>Anuradha Kumari - {post.title}</title>
+      </Head>
       <h1 className="text-gray-900 font-bold text-3xl py-4">
         {post.title}
       </h1>

@@ -1,4 +1,5 @@
 import { GraphQLClient } from "graphql-request";
+import Head from 'next/head';
 import Link from "next/link";
 import getPageDetails from '../../queries/getPageDetails';
 
@@ -17,6 +18,9 @@ export async function getStaticProps() {
 const Contact = () => {
   return (
     <div className="py-8 sm:py-28 max-w-3xl">
+      <Head>
+        <title>Anuradha Kumari - Contact</title>
+      </Head>
       <h1 className="pt-4 pb-8 text-3xl">Contact</h1>
       <div className="text-lg">
         Feel free to {' '}
