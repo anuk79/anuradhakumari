@@ -1,36 +1,9 @@
 import Link from "next/link";
 import Image from 'next/image';
-import { getBlogs, getBlogPost } from '../../queries/getBlogs';
-import getPageDetails from '../../queries/getPageDetails';
-import markdownToHtml from '../../utils/markdownToHtml';
-import styles from '../../styles/Home.module.css';
-
-export async function getStaticProps({ params }) {
-    const pageDetails = await getPageDetails();
-    const { post } = await getBlogPost(params.slug);
-    const mdContent = await markdownToHtml(post.content || '')
-    return {
-        props: {
-          ...pageDetails,
-          post: {...post, mdContent},
-        },
-    };
-}
-
-export async function getStaticPaths() {
-    const posts = await getBlogs();
-    return {
-        paths: Object.values(posts).map(({ slug }) => ({
-        params: { slug },
-        })),
-        fallback: false,
-    };
-}
 
 export default ({ post }) => {
   return (
     <div className="py-2 min-h-screen max-w-3xl">
-      
       <h1 className="text-gray-900 font-bold text-3xl py-4">
         {post.title}
       </h1>
@@ -44,7 +17,6 @@ export default ({ post }) => {
           <div className="mb-8">
             <div className={styles['markdown']} dangerouslySetInnerHTML={{ __html: post.mdContent }}></div>
           </div>
-          
         </div>
       </div>
       <div className="mx-auto">

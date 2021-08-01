@@ -2,11 +2,11 @@ import { GraphQLClient } from 'graphql-request';
 
 const graphcms = new GraphQLClient(process.env.GRAPHQL_URL_ENDPOINT);
 
-async function getTalkDetails() {
+export async function getTalkDetails() {
     const { talks } = await graphcms.request(
         `
             query {
-                talks {
+                talks(orderBy: date_DESC) {
                     id
                     topic
                     talkStatus
@@ -22,5 +22,24 @@ async function getTalkDetails() {
         talks
     }
   }
-  
-  export default getTalkDetails;
+
+export async function getFutureTalkDetails() {
+    const { talks } = await graphcms.request(
+        `
+            query {
+                talks(where: {talkStatus: future}) {
+                    id
+                    topic
+                    talkStatus
+                    topics
+                    date
+                    eventDetails
+                }
+            }
+        `
+    );
+
+    return {
+        futureTalks: talks
+    }
+}

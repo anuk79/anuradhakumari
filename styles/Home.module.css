@@ -23,3 +23,12 @@
   padding: 10px 10px;
   border: 1px solid darkgray;
 }
+
+.details-md {
+  @apply text-center py-2 text-lg leading-relaxed;
+}
+
+.details-md p,
+.details-md div {
+  @apply my-6;
+}
