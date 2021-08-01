@@ -14,10 +14,12 @@ export async function getStaticProps() {
     };
   }
 
-export default ({ posts }) => {
+const Blog = ({ posts }) => {
   return (
     <div className="py-2">
       <BlogCard posts={posts} label={`Blog posts (${posts?.length})`} />
     </div>
   );
 };
+
+export default Blog;

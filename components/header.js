@@ -37,4 +37,4 @@ function Header({ navLinks = [] }) {
   )
 }
 
-export default Header
+export default Header;

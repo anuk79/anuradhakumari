@@ -24,7 +24,7 @@ export async function getStaticProps() {
     };
   }
 
-export default ({ pastTalks = [], futureTalks = [] }) => {
+const Talks = ({ pastTalks = [], futureTalks = [] }) => {
   return (
     <div className="py-8 max-w-3xl ">
       <h1 className="text-3xl pt-4 font-bold">Tech talks</h1>
@@ -51,3 +51,5 @@ export default ({ pastTalks = [], futureTalks = [] }) => {
     </div>
   );
 };
+
+export default Talks;

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from 'next/image';
 
-export default ({ post }) => {
+const BlogPost = ({ post }) => {
   return (
     <div className="py-2 min-h-screen max-w-3xl">
       <h1 className="text-gray-900 font-bold text-3xl py-4">
@@ -27,3 +27,5 @@ export default ({ post }) => {
     </div>
   );
 };
+
+export default BlogPost;

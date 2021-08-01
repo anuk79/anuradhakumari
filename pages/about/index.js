@@ -10,7 +10,7 @@ export async function getStaticProps() {
     };
   }
 
-export default ({ about = {} }) => {
+const About = ({ about = {} }) => {
   return (
     <div className="py-8">
       <h1>About me</h1>
@@ -26,3 +26,5 @@ export default ({ about = {} }) => {
     </div>
   );
 };
+
+export default About;

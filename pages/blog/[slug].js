@@ -27,7 +27,7 @@ export async function getStaticPaths() {
     };
 }
 
-export default ({ post }) => {
+const Post = ({ post }) => {
   return (
     <div className="py-2 min-h-screen max-w-3xl">
       
@@ -55,3 +55,5 @@ export default ({ post }) => {
     </div>
   );
 };
+
+export default Post;

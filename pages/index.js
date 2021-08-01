@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import TalkCard from '../components/talkCard';
 import BlogCard from '../components/blogCard';
 import getPageDetails from '../queries/getPageDetails';
@@ -27,11 +28,7 @@ export default function Home({ about, futureTalks, posts, mdDetails }) {
   return (
     <section className="flex flex-wrap items-center justify-center max-w-2xl py-16 sm:py-28">
       <div className="flex items-center justify-center">
-        <figure>
-          <img width="70" height="70" 
-            src={about.person.photo.url} alt="" className="rounded-full" 
-          lazy="loaded" />
-        </figure>
+        <Image width="70" height="70" src={about.person.photo.url} alt="" className="rounded-full"  />
         <h1 className="px-4 text-3xl font-bold">{about.title}</h1> 
       </div>
       <p className="text-center pt-8 text-lg">
