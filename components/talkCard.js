@@ -15,7 +15,7 @@ const TalkCard = ({ talks = [], label }) => {
                 </Link>
               </div>
               {resources && <Link href={resources}>
-                <a>Resources</a>
+                <a>Slides / resources</a>
               </Link>}
             </div>
             <div className="flex items-center">
