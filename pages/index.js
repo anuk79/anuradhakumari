@@ -26,16 +26,18 @@ export async function getStaticProps() {
 
 export default function Home({ about, futureTalks, posts, mdDetails }) {
   return (
-    <section className="flex flex-wrap items-center justify-center px-4 sm:px-10 lg:px-28 py-16 sm:py-28">
-      <div className="flex items-center justify-center w-full">
-        <Image width="70" height="70" src={about.person.photo.url} alt="" className="rounded-full"  />
-        <h1 className="px-4 text-3xl font-bold">{about.title}</h1> 
-      </div>
-      <p className="text-center pt-8 text-lg w-3xl">
-        {about.subtitle}
-      </p>
-      <div className="w-2xl">
-        <div className={styles['details-md']} dangerouslySetInnerHTML={{ __html:mdDetails }}></div>
+    <section className="flex flex-wrap items-center justify-center px-4 sm:px-10 py-4 lg:py-16 max-w-7xl">
+      <div className="max-w-3xl">
+        <div className="flex items-center justify-center w-full">
+          <Image width="70" height="70" src={about.person.photo.url} alt="" className="rounded-full"  />
+          <h1 className="px-4 text-4xl font-bold">{about.title}</h1> 
+        </div>
+        <p className="text-center pt-8 text-lg w-3xl font-semibold">
+          {about.subtitle}
+        </p>
+        <div className="w-2xl">
+          <div className={styles['details-md']} dangerouslySetInnerHTML={{ __html:mdDetails }}></div>
+        </div>
       </div>
       <div className="py-12 w-full">
        <TalkCard talks={futureTalks} label="Upcoming speaking engagements" />

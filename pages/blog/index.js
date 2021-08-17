@@ -17,7 +17,7 @@ export async function getStaticProps() {
 
 const Blog = ({ posts }) => {
   return (
-    <div className="py-2">
+    <div className="pb-2 px-2 sm:px-4 max-w-4xl">
       <Head>
         <title>Anuradha Kumari - Blogs</title>
       </Head>
