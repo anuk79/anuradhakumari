@@ -32,7 +32,7 @@ const Post = ({ post }) => {
   return (
     <div className="py-2 min-h-screen max-w-4xl">
       <Head>
-        <title>Anuradha's blog - {post.title}</title>
+        <title>Anuradha&apos;s blog - {post.title}</title>
       </Head>
       <h1 className="text-3xl py-4 px-8">
         {post.title}
