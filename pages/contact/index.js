@@ -17,7 +17,7 @@ export async function getStaticProps() {
 
 const Contact = () => {
   return (
-    <div className="py-8 sm:py-28 max-w-3xl">
+    <div className="py-2 md:py-16 px-2 sm:px-4 max-w-3xl">
       <Head>
         <title>Anuradha Kumari - Contact</title>
       </Head>

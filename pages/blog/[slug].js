@@ -30,29 +30,29 @@ export async function getStaticPaths() {
 
 const Post = ({ post }) => {
   return (
-    <div className="py-2 min-h-screen max-w-3xl">
+    <div className="py-2 min-h-screen max-w-4xl">
       <Head>
-        <title>Anuradha Kumari - {post.title}</title>
+        <title>Anuradha&apos;s blog - {post.title}</title>
       </Head>
-      <h1 className="text-gray-900 font-bold text-3xl py-4">
+      <h1 className="text-3xl py-4 px-8">
         {post.title}
       </h1>
       <div className="mx-auto mb-8">
         <div className="flex items-center">
-          <div className="text-sm">
-            <p className="text-gray-600">{post.published}</p>
+          <div className="text-sm px-8 mb-4">
+            <p className="text-gray-600">{`Published on: ${post.published}`}</p>
           </div>
         </div>
-        <div className="bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
+        <div className="bg-white px-8 rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
           <div className="mb-8">
             <div className={styles['markdown']} dangerouslySetInnerHTML={{ __html: post.mdContent }}></div>
           </div>
           
         </div>
       </div>
-      <div className="mx-auto">
+      <div className="mx-auto mb-8">
         <Link href="/blog">
-          <a>Back to all blog posts</a>
+          <a>All blog posts</a>
         </Link>
       </div>
     </div>

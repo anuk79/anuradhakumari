@@ -13,7 +13,7 @@ export async function getStaticProps() {
 
 const About = ({ about = {} }) => {
   return (
-    <div className="py-8">
+    <div className="pb-8 px-2 sm:px-4 max-w-4xl">
       <Head>
         <title>Anuradha Kumari - About</title>
       </Head>

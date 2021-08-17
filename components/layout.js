@@ -5,7 +5,7 @@ function Layout ({ children, footer, header }) {
   return (
     <>
       <Header {...header} />
-      <main className="flex justify-center px-4 sm:px-10 lg:px-28">{children}</main>
+      <main className="flex justify-center px-4 sm:px-10">{children}</main>
       <Footer {...footer} />
     </>
   )

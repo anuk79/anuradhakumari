@@ -9,12 +9,21 @@
   @apply my-6;
 }
 
+.markdown ul,
+.markdown ol {
+  @apply mx-8;
+}
+
 .markdown blockquote {
   @apply my-6;
 }
 
+.markdown b, .markdown strong {
+  @apply font-bold;
+}
+
 .markdown h2 {
-  @apply text-3xl mt-12 mb-4 leading-snug;
+  @apply text-3xl mt-8 mb-4 leading-snug;
 }
 
 .markdown h3 {
@@ -40,4 +49,17 @@
 .details-md p,
 .details-md div {
   @apply my-6;
+}
+
+.markdown blockquote,
+.details-md blockquote {
+    margin-top: 5px;
+    padding: 0 10px;
+    box-shadow: 5px 5px #717476;
+    font-family: Roboto Mono,monospace;
+    margin-bottom: 1.3em;
+    border: 2px solid #4b4242;
+    color: #3b9217;
+    font-weight: 600;
+    font-size: 1.3em;
 }

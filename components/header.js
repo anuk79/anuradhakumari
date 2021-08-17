@@ -3,8 +3,8 @@ import Head from 'next/head';
 
 function Header({ navLinks = [] }) {
   return (
-    <header className="px-4 sm:px-10 lg:px-28 py-6 sticky top-0 z-4 text-base sm:text-lg">
-        <nav className="flex items-center justify-between flex-wrap space-x-4">
+    <header className="px-4 sm:px-10 lg:px-28 py-6 sticky top-0 z-10 text-base sm:text-lg">
+        <nav className="flex items-center justify-center md:justify-between flex-wrap space-x-4">
           <Link href="/">
             <a>
               Anuradha Kumari
@@ -15,10 +15,10 @@ function Header({ navLinks = [] }) {
               {navLinks.map((page, index) => (
                 <li
                   key={page.id || index}
-                  className="block my-4 md:inline-block md:my-0"
+                  className="my-4 inline-block"
                 >
                   <Link href={`/${page.url}`}>
-                    <a className="py-2 px-3 font-medium capitalize">
+                    <a className="my-2 mx-3 inline-block font-medium capitalize">
                       {page.label}
                     </a>
                   </Link>
