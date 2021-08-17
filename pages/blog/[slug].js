@@ -40,7 +40,7 @@ const Post = ({ post }) => {
       <div className="mx-auto mb-8">
         <div className="flex items-center">
           <div className="text-sm px-8 mb-4">
-            <p className="text-gray-600">{'Published on ' + post.published}</p>
+            <p className="text-gray-600">{`Published on: ${post.published}`}</p>
           </div>
         </div>
         <div className="bg-white px-8 rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
