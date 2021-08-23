@@ -1,16 +1,16 @@
 import Link from "next/link";
 import Image from 'next/image';
 
-const Blogcard = ({ posts, label, headerTag }) => {
+const Blogcard = ({ posts, label, headerTag, showNote=true }) => {
   const HeadingTag = headerTag || 'h1';
   return (
     <div className="py-2">
       <HeadingTag className="py-4 text-3xl font-bold">{label}</HeadingTag>
-      <div>
-        Note: I am working on migrating my blog posts to the website. Till that time, you can {' '}
+      {showNote && <div className="pb-8">
+        Note: This is not the complete list of blogs. I am working on migrating my blog posts to the website. You can also {' '}
       <Link href="https://anuradhak.medium.com/"><a>check my blogs on medium</a></Link>.
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-8">
+      </div>}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {posts.map((post) => {
           return (
               <div key={post.id} className="w-full shadow-lg mb-8 mx-auto flex">
