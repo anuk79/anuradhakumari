@@ -13,7 +13,7 @@ const Blogcard = ({ posts, label, headerTag }) => {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-8">
         {posts.map((post) => {
           return (
-              <div key={post.id} className="max-w-3xl shadow-lg mb-8 mx-auto flex">
+              <div key={post.id} className="w-full shadow-lg mb-8 mx-auto flex">
                 {/* <div
                   className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
                   style={{ backgroundImage: `url(${post.coverImage.url})` }}
