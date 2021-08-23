@@ -4,8 +4,8 @@
 
 :root {
   --color-primary: #4f1f84;
+  --text-inverse: #fff;
   --bg-primary: #fff;
-  --bg-primary: #f4f4ff;
   --link: #5620bf;
 }
 
@@ -15,7 +15,6 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: var(--bg-primary);
 }
 
 a {
@@ -35,24 +34,16 @@ a:hover, a:focus {
   box-sizing: border-box;
 }
 
-header {
-  color: black;
-  background-color: #f4f4ff;
-}
-
-header a {
-  color: black;
-}
-
-h1, h2, h3 {
+h1 {
   color: var(--color-primary);
 }
 
-footer {
+header, footer {
+  color: var(--text-inverse);
   background-color: var(--color-primary);
 }
 
-footer a {
-  color: white;
+header a, footer a {
+  color: var(--text-inverse);
 }
 

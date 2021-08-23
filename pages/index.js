@@ -44,7 +44,7 @@ export default function Home({ about, futureTalks, posts, mdDetails }) {
        <Link href="/talks"><a className="text-lg">All talks</a></Link>
       </div>
       <div>
-        <BlogCard posts={posts} label={`Recent Blog posts`} />
+        <BlogCard posts={posts} label="Recent Blog posts" headerTag="h2" />
         <Link href="https://anuradhak.medium.com/"><a className="text-lg">All blog posts</a></Link>
       </div>
     </section>

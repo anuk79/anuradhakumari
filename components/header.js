@@ -15,7 +15,7 @@ function Header({ navLinks = [] }) {
               {navLinks.map((page, index) => (
                 <li
                   key={page.id || index}
-                  className="my-4 inline-block"
+                  className="inline-block"
                 >
                   <Link href={`/${page.url}`}>
                     <a className="my-2 mx-3 inline-block font-medium capitalize">
@@ -29,7 +29,7 @@ function Header({ navLinks = [] }) {
         </nav>
         <Head>
           <title>Anuradha Kumari</title>
-          <meta name="description" content="Personal website of Anuradha Kumari" />
+          <meta name="description" content="Website of Anuradha Kumari" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
         
