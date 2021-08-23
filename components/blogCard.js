@@ -1,13 +1,14 @@
 import Link from "next/link";
 import Image from 'next/image';
 
-const Blogcard = ({ posts, label }) => {
+const Blogcard = ({ posts, label, headerTag }) => {
+  const HeadingTag = headerTag || 'h1';
   return (
     <div className="py-2">
-      <h1 className="py-4 text-3xl font-bold">{label}</h1>
+      <HeadingTag className="py-4 text-3xl font-bold">{label}</HeadingTag>
       <div>
         Note: I am working on migrating my blog posts to the website. Till that time, you can {' '}
-      <Link href="https://anuradhak.medium.com/"><a className="text-lg">check all my blogs on medium</a></Link>.
+      <Link href="https://anuradhak.medium.com/"><a>check my blogs on medium</a></Link>.
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-8">
         {posts.map((post) => {
