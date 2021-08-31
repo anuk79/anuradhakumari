@@ -27,6 +27,12 @@ function Footer({ navLinks = [] }) {
             &copy; 2021 Anuradha Kumari
           </p>
         </div>
+        <div className="py-4">
+          Made using{' '} 
+          <a href="https://nextjs.org/">NextJS</a>,
+          {' '}  <a href="https://graphcms.com/">GraphCMS</a> {' '} 
+          and{' '}  <a href="https://tailwindcss.com/">Tailwind CSS</a>. Hosted on {' '} <a href="https://www.netlify.com/">Netlify</a> {'.'} 
+        </div>
     </footer>
   )
 }
