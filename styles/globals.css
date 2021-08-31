@@ -6,7 +6,7 @@
   --color-primary: #4f1f84;
   --text-inverse: #fff;
   --bg-primary: #fff;
-  --link: #5620bf;
+  --link: #af0606;  
 }
 
 html,
@@ -19,15 +19,21 @@ body {
 
 a {
   color: var(--link);
-  text-decoration: none;
   font-weight: 600;
   padding: 2px;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: 0.1em;
 }
 
-a:hover, a:focus {
-  text-decoration: underline;
+a:hover {
   text-underline-offset: 0.2em;
   text-decoration-thickness: 0.2em;
+}
+
+a:focus {
+  text-decoration: none;
+  outline-color: var(--link);
 }
 
 * {
@@ -45,5 +51,30 @@ header, footer {
 
 header a, footer a {
   color: var(--text-inverse);
+}
+
+header a:focus, footer a:focus {
+  outline-color: var(--text-inverse);
+}
+
+.skip-to-main-link {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+
+.skip-to-main-link:focus {
+  top: 5px;
+  text-align: center;
+  opacity: 1;
+  padding: 0 2px;
+}
+
+@media (min-width: 1024px) {
+  .bio {
+    border: 5px double var(--color-primary);
+    padding: 50px 20px 20px;
+    border-radius: 5px;
+  }
 }
 

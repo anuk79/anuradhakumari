@@ -48,7 +48,7 @@
 
 .details-md p,
 .details-md div {
-  @apply my-6;
+  @apply my-6 text-left;
 }
 
 .markdown blockquote,

@@ -29,7 +29,7 @@ export async function getRecentBlogs() {
         query {
             blogPosts(
                 orderBy: published_DESC
-                first: 2
+                first: 14
             ) {
             id
             title

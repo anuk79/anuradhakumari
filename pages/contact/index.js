@@ -21,11 +21,11 @@ const Contact = () => {
       <Head>
         <title>Anuradha Kumari - Contact</title>
       </Head>
-      <h1 className="pt-4 pb-8 text-3xl">Contact</h1>
+      <h1 className="pt-4 pb-8 text-3xl">Contact Me</h1>
       <div className="text-lg">
         Feel free to {' '}
         <a href="mailto:contact@anuradhakumari.com">drop me an email</a>
-        , to discuss about tech, accessibility or if you have any speaking/writing opportunities for me.
+        , to discuss about web development, accessibility or if you would like to invite me to speak at your events.
 
       </div>
       <div className="py-4 text-lg">
