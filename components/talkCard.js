@@ -5,7 +5,7 @@ const TalkCard = ({ talks = [], label }) => {
     <div>
       <h2 className="text-3xl py-4 font-bold">{ label}</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        {talks?.map(({ id, topic, date, eventDetails }) => (
+        {talks?.map(({ id, topic, date, eventDetails, topics }) => (
           <div key={id} className="shadow-lg mx-auto mb-8 w-full">
             <div className="p-4 flex flex-col justify-between leading-normal h-full">
               <div className="mb-4">
@@ -23,8 +23,12 @@ const TalkCard = ({ talks = [], label }) => {
                 </Link>}
               </div>
               <div className="flex items-center">
-                <div className="text-sm">
-                  <p className="text-gray-600">{date}</p>
+                <div className="text-base text-gray-600">
+                <div>
+                  Topics:
+                    {topics?.map(topic => <div className="inline-block mx-1 my-2" key={topic}>{topic}</div>)}
+                </div>
+                  <p>Date:&nbsp;{date}</p>
                 </div>
               </div>
             </div>

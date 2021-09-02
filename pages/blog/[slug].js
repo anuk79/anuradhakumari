@@ -37,10 +37,13 @@ const Post = ({ post }) => {
       <h1 className="text-3xl py-4 px-8">
         {post.title}
       </h1>
-      <div className="mx-auto mb-8">
+      <div className="mx-auto mb-6">
         <div className="flex items-center">
-          <div className="text-sm px-8 mb-4">
-            <p className="text-gray-600">{`Published on: ${post.published}`}</p>
+          <div className="px-8">
+            <p className="text-gray-600 text-md">{`Published on: ${post.published}`}</p>
+            <span className="text-md inline-block" style={{color: '#E14369'}}>
+              Tags: {post.topics?.map(topic => <span key={topic} className="inline-block p-2">{topic}</span>)}
+            </span>
           </div>
         </div>
         <div className="bg-white px-8 rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
@@ -50,9 +53,9 @@ const Post = ({ post }) => {
           
         </div>
       </div>
-      <div className="mx-auto mb-8">
+      <div className="mx-auto mb-12">
         <Link href="/blog">
-          <a>All blog posts</a>
+          <a className="buttoned">All blog posts</a>
         </Link>
       </div>
     </div>

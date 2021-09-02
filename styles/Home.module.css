@@ -23,7 +23,11 @@
 }
 
 .markdown h2 {
-  @apply text-3xl mt-8 mb-4 leading-snug;
+  @apply text-3xl mb-4 leading-snug;
+}
+
+.markdown h2:not(:first-child) {
+  @apply mt-8;
 }
 
 .markdown h3 {
