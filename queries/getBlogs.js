@@ -7,12 +7,13 @@ export async function getBlogs() {
         `
         query {
             blogPosts(orderBy: published_DESC) {
-            id
-            title
-            slug
-            excerpt
-            category
-            published
+                id
+                title
+                slug
+                excerpt
+                category
+                published
+                topics
             }
         }
         `
@@ -31,12 +32,13 @@ export async function getRecentBlogs() {
                 orderBy: published_DESC
                 first: 14
             ) {
-            id
-            title
-            slug
-            excerpt
-            category
-            published
+                id
+                title
+                slug
+                excerpt
+                category
+                published
+                topics
             }
         }
     `
@@ -52,14 +54,16 @@ export async function getBlogPost(slug) {
         `
         query BlogPosts($slug: String!) {
             blogPost(where: { slug: $slug }) {
-            id
-            title
-            content
-            slug
-            coverImage {
-              url
-            }
-            published
+                id
+                title
+                content
+                slug
+                coverImage {
+                    url
+                }
+                published
+                category
+                topics
           }
         }
       `,

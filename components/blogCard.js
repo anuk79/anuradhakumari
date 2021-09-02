@@ -29,8 +29,12 @@ const Blogcard = ({ posts, label, headerTag, showNote=true }) => {
                     <p className="text-gray-700 text-base">{post.excerpt}</p>
                   </div>
                   <div className="flex items-center">
-                    <div className="text-sm">
-                      <p className="text-gray-600">{post.published}</p>
+                    <div className="text-base text-gray-600">
+                    <div>
+                      Tags:
+                        {post.topics?.map(topic => <div className="inline-block mx-1 my-2" key={topic}>{topic}</div>)}
+                    </div>
+                      <p>Published:&nbsp;{post.published}</p>
                     </div>
                   </div>
                 </div>
@@ -43,3 +47,7 @@ const Blogcard = ({ posts, label, headerTag, showNote=true }) => {
 };
 
 export default Blogcard;
+
+{/* <div>
+    {post.topics?.map(topic => <div className="inline-block tag mt-2" key={topic}>{topic}</div>)}
+</div> */}
