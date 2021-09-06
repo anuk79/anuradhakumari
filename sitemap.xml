@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>https://www.anuradhakumari.com/</loc>
+  <lastmod>2021-09-06T12:53:49+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.anuradhakumari.com/talks</loc>
+  <lastmod>2021-09-06T12:53:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.anuradhakumari.com/blog</loc>
+  <lastmod>2021-09-06T12:53:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.anuradhakumari.com/contact</loc>
+  <lastmod>2021-09-06T12:53:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.anuradhakumari.com/blog/configuring-prettier-and-eslint-plugins-for-React-from-scratch</loc>
+  <lastmod>2021-09-06T12:53:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.anuradhakumari.com/blog/hide-sourcemap-for-apps-deployed-on-netlify</loc>
+  <lastmod>2021-09-06T12:53:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.anuradhakumari.com/blog/add-rss-feed-to-slack-channels</loc>
+  <lastmod>2021-09-06T12:53:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.anuradhakumari.com/blog/git-shallow-clone</loc>
+  <lastmod>2021-09-06T12:53:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.anuradhakumari.com/blog/yarn-link-unlink</loc>
+  <lastmod>2021-09-06T12:53:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.anuradhakumari.com/blog/git-empty-commit</loc>
+  <lastmod>2021-09-06T12:53:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.anuradhakumari.com/blog/interactive-upgrade-yarn-packages</loc>
+  <lastmod>2021-09-06T12:53:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.anuradhakumari.com/blog/vscode-edit-multiple-lines-at-once</loc>
+  <lastmod>2021-09-06T12:53:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.anuradhakumari.com/blog/restart-vpn</loc>
+  <lastmod>2021-09-06T12:53:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.anuradhakumari.com/blog/github1s-trick</loc>
+  <lastmod>2021-09-06T12:53:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.anuradhakumari.com/blog/dot-meaning-in-git-checkout-command</loc>
+  <lastmod>2021-09-06T12:53:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.anuradhakumari.com/blog/change-caret-color-for-editable-html-elements</loc>
+  <lastmod>2021-09-06T12:53:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.anuradhakumari.com/blog/es2017-guide</loc>
+  <lastmod>2021-09-06T12:53:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.anuradhakumari.com/blog/es6-template-literals</loc>
+  <lastmod>2021-09-06T12:53:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.anuradhakumari.com/blog/figure-tags-html5</loc>
+  <lastmod>2021-09-06T12:53:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.anuradhakumari.com/blog/proper-naming-convention-pays-off-in-long-run</loc>
+  <lastmod>2021-09-06T12:53:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.anuradhakumari.com/blog/how-should-i-unit-test-my-code-part-1</loc>
+  <lastmod>2021-09-06T12:53:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.anuradhakumari.com/blog/why-should-i-unit-test-my-code</loc>
+  <lastmod>2021-09-06T12:53:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
