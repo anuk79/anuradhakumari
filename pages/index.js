@@ -47,7 +47,7 @@ export default function Home({ about, futureTalks, posts, mdDetails }) {
       </div>
       <div>
         <BlogCard posts={posts} label="Recent Blog posts" headerTag="h2" showNote={false} />
-        <Link href="/blog"><a className="text-lg buttoned">All blog posts</a></Link>
+        <Link href="/blog"><a className="text-lg buttoned pb-8 inline-block">All blog posts</a></Link>
       </div>
     </section>
   );

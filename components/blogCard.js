@@ -21,7 +21,7 @@ const Blogcard = ({ posts, label, headerTag, showNote=true }) => {
                 /> */}
                 <div className="p-4 flex flex-col justify-between leading-normal">
                   <div className="mb-4">
-                    <div className="text-gray-900 font-bold text-xl mb-2">
+                    <div className="font-bold text-2xl mb-4">
                       <Link as={`/blog/${post.slug}`} href="/blog/[slug]">
                         <a>{post.title}</a>
                       </Link>
@@ -31,10 +31,10 @@ const Blogcard = ({ posts, label, headerTag, showNote=true }) => {
                   <div className="flex items-center">
                     <div className="text-base text-gray-600">
                     <div>
-                      Tags:
-                        {post.topics?.map(topic => <div className="inline-block mx-1 my-2" key={topic}>{topic}</div>)}
+                        {post.topics?.map(topic => <div className="inline-block my-2 tag" key={topic}>{topic}</div>)}
                     </div>
-                      <p>Published:&nbsp;{post.published}</p>
+                    <p>{(new Date(post.published)?.toDateString()?.slice(4))}</p>
+                      
                     </div>
                   </div>
                 </div>
