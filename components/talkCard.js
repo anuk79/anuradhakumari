@@ -7,30 +7,22 @@ const TalkCard = ({ talks = [], label }) => {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {talks?.map(({ id, topic, date, eventDetails, topics }) => (
           <div key={id} className="shadow-lg mx-auto mb-8 w-full">
-            <div className="p-4 flex flex-col justify-between leading-normal h-full">
-              <div className="mb-4">
+            <div className="p-4 flex flex-col leading-normal h-full">
+              <div>
+                <Link href={eventDetails.url}>
+                  <a className="inline-block pb-4 text-2xl">{eventDetails.name}</a>
+                </Link>
                 <div className="text-gray-900 text-xl mb-2">{topic}</div>
-                {
-                  eventDetails?.url && <div>
-                    Event name: {' '}
-                    <Link href={eventDetails.url}>
-                      <a>{eventDetails.name}</a>
-                    </Link>
-                  </div>
-                }
-                {eventDetails?.resources && <Link href={eventDetails.resources}>
-                  <a>Slides / resources</a>
-                </Link>}
-              </div>
-              <div className="flex items-center">
                 <div className="text-base text-gray-600">
+                <p>{(new Date(date)?.toDateString()?.slice(4))}</p>
                 <div>
-                  Topics:
-                    {topics?.map(topic => <div className="inline-block mx-1 my-2" key={topic}>{topic}</div>)}
-                </div>
-                  <p>Date:&nbsp;{date}</p>
+                    {topics?.map(topic => <div className="inline-block my-2 tag" key={topic}>{topic}</div>)}
                 </div>
               </div>
+              </div>
+              {eventDetails?.resources && <div><Link href={eventDetails.resources}>
+                <a className="buttoned mt-2 inline-block">Resources</a>
+              </Link></div>}
             </div>
           </div>
         ) )}
