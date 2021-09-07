@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import SvgIcons from './Icons';
 
 function Footer({ navLinks = [] }) {
   return (
@@ -8,12 +9,12 @@ function Footer({ navLinks = [] }) {
               <nav aria-label="footer navigation">
                 <ul className="space-y-4">
                   {navLinks.map((link) => (
-                    <li key={link.id} className="inline-block mx-2" >
+                    <li key={link.id} className="inline-block mx-4" >
                       <Link
                         href={link.url}
                       >
-                        <a className="text-base no-underline">
-                          {link.label}
+                        <a className="inline-block no-underline p-0 svg-icon" aria-label={link.label}>
+                          {SvgIcons[link.label]}
                         </a>
                       </Link>
                     </li>
@@ -27,7 +28,7 @@ function Footer({ navLinks = [] }) {
           <a className="no-underline" href="https://nextjs.org/">NextJS</a>,
           {' '}  <a className="no-underline" href="https://graphcms.com/">GraphCMS</a> {' '} 
           and{' '}  <a className="no-underline" href="https://tailwindcss.com/">Tailwind CSS</a>. 
-          Hosted on {' '} <a className="no-underline" href="https://www.netlify.com/">Netlify</a> {', and open-sourced on GitHub'} 
+          Hosted on {' '} <a className="no-underline" href="https://www.netlify.com/">Netlify</a>{', and open-sourced on GitHub'} 
         </div>
         <p className="mt-8 text-base md:mt-0 py-4 text-center">
           &copy; 2021 Anuradha Kumari

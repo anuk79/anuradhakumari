@@ -115,3 +115,13 @@ header a:focus, footer a:focus {
   margin-left: 8px;
 }
 
+a.svg-icon svg {
+  height: 40px;
+  width: 40px;
+  fill: var(--text-inverse);
+  padding: 6px;
+}
+
+a.svg-icon:hover svg {
+  opacity: 0.8;
+}
