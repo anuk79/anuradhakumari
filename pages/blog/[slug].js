@@ -30,23 +30,23 @@ export async function getStaticPaths() {
 
 const Post = ({ post }) => {
   return (
-    <div className="py-2 min-h-screen max-w-4xl">
+    <div className="py-2 min-h-screen max-w-4xl w-full">
       <Head>
         <title>Anuradha&apos;s blog - {post.title}</title>
       </Head>
-      <h1 className="text-3xl py-4 px-8">
+      <h1 className="text-4xl py-4 md:px-8">
         {post.title}
       </h1>
       <div className="mx-auto mb-6">
         <div className="flex items-center">
-          <div className="px-8">
-            <p className="text-gray-600 text-md">{`Published on: ${post.published}`}</p>
-            <span className="text-md inline-block" style={{color: '#E14369'}}>
-              Tags: {post.topics?.map(topic => <span key={topic} className="inline-block p-2">{topic}</span>)}
+          <div className="md:px-8">
+            <p className="text-gray-600 text-md mb-2">{(new Date(post.published)?.toDateString()?.slice(4))}</p>
+            <span className="inline-block my-2" style={{color: '#E14369'}}>
+              {post.topics?.map(topic => <span key={topic} className="tag">{topic}</span>)}
             </span>
           </div>
         </div>
-        <div className="bg-white px-8 rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
+        <div className="bg-white md:px-8 rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
           <div className="mb-8">
             <div className={styles['markdown']} dangerouslySetInnerHTML={{ __html: post.mdContent }}></div>
           </div>

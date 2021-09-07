@@ -41,13 +41,13 @@ export default function Home({ about, futureTalks, posts, mdDetails }) {
           </div>
         </div>
       </div>
-      <div className="py-12">
-       <TalkCard talks={futureTalks} label="Upcoming speaking engagements" />
+      <div className="lg:pt-12 pb-12">
+       <TalkCard talks={futureTalks} label="Upcoming talks" />
        <Link href="/talks"><a className="text-lg buttoned">All talks</a></Link>
       </div>
       <div>
         <BlogCard posts={posts} label="Recent Blog posts" headerTag="h2" showNote={false} />
-        <Link href="/blog"><a className="text-lg buttoned pb-8 inline-block">All blog posts</a></Link>
+        <Link href="/blog"><a className="text-lg buttoned mb-8 lg:mb-0 inline-block">All blog posts</a></Link>
       </div>
     </section>
   );

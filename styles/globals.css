@@ -115,3 +115,8 @@ header a:focus, footer a:focus {
   margin-left: 8px;
 }
 
+a svg {
+  height: 35px;
+  fill: var(--text-inverse);
+}
+
