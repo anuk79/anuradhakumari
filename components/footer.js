@@ -2,7 +2,6 @@ import Link from 'next/link';
 import SvgIcons from './Icons';
 
 function Footer({ navLinks = [] }) {
-  console.log(SvgIcons['Twitter'])
   return (
     <footer className="px-4 sm:px-10 lg:px-28 py-4 lg:py-8 text-white">
         <div className="text-center">
@@ -14,7 +13,7 @@ function Footer({ navLinks = [] }) {
                       <Link
                         href={link.url}
                       >
-                        <a className="text-base no-underline icon-links" aria-label={link.label}>
+                        <a className="inline-block no-underline p-0 svg-icon" aria-label={link.label}>
                           {SvgIcons[link.label]}
                         </a>
                       </Link>
@@ -29,7 +28,7 @@ function Footer({ navLinks = [] }) {
           <a className="no-underline" href="https://nextjs.org/">NextJS</a>,
           {' '}  <a className="no-underline" href="https://graphcms.com/">GraphCMS</a> {' '} 
           and{' '}  <a className="no-underline" href="https://tailwindcss.com/">Tailwind CSS</a>. 
-          Hosted on {' '} <a className="no-underline" href="https://www.netlify.com/">Netlify</a>. 
+          Hosted on {' '} <a className="no-underline" href="https://www.netlify.com/">Netlify</a>{', and open-sourced on GitHub'} 
         </div>
         <p className="mt-8 text-base md:mt-0 py-4 text-center">
           &copy; 2021 Anuradha Kumari
