@@ -15,8 +15,8 @@ const TalkCard = ({ talks = [], label }) => {
                 <div className="text-gray-900 text-xl mb-2">{topic}</div>
                 <div className="text-base text-gray-600">
                 <p>{(new Date(date)?.toDateString()?.slice(4))}</p>
-                <div>
-                    {topics?.map(topic => <div className="inline-block my-2 tag" key={topic}>{topic}</div>)}
+                <div className="flex flex-wrap">
+                    {topics?.map(topic => <div className="tag" key={topic}>{topic}</div>)}
                 </div>
               </div>
               </div>

@@ -31,10 +31,12 @@ const Talks = ({ pastTalks = [], futureTalks = [] }) => {
       <Head>
         <title>Anuradha Kumari - Tech talks</title>
       </Head>
-      <h1 className="text-3xl pt-4 font-bold">Tech talks</h1>
-      <div className="py-4">
-        I am passionate about exploring new technologies and sharing the knowledge and experience with the community. 
-        I love the technical discussions and they motivate me to learn and explore further.
+      <div className="head-section">
+        <h1 className="text-3xl pt-4 font-bold">Tech talks</h1>
+        <div className="py-4">
+          I am passionate about exploring new technologies and sharing the knowledge and experience with the community. 
+          I love the technical discussions and they motivate me to learn and explore further.
+        </div>
       </div>
       <div>
         <h2 className="text-3xl pt-4 font-bold">Currently accepting speaking invitations</h2>

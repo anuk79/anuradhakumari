@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from 'next/image';
 
 const Blogcard = ({ posts, label, headerTag, showNote=true }) => {
   const HeadingTag = headerTag || 'h1';
@@ -7,8 +6,8 @@ const Blogcard = ({ posts, label, headerTag, showNote=true }) => {
     <div className="py-2">
       <HeadingTag className="py-4 text-3xl font-bold">{label}</HeadingTag>
       {showNote && <div className="pb-8">
-        Note: This is not the complete list of blogs. I am working on migrating my blog posts to the website. You can also {' '}
-      <Link href="https://anuradhak.medium.com/"><a>check my blogs on medium</a></Link>.
+        Note: This is work in progress list. I am working on migrating all my blog posts to the website. You can also {' '}
+      <Link href="https://anuradhak.medium.com/"><a>read my blogs on medium</a></Link>.
       </div>}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {posts.map((post) => {
@@ -30,8 +29,8 @@ const Blogcard = ({ posts, label, headerTag, showNote=true }) => {
                   </div>
                   <div className="flex items-center">
                     <div className="text-base text-gray-600">
-                    <div>
-                        {post.topics?.map(topic => <div className="inline-block my-2 tag" key={topic}>{topic}</div>)}
+                    <div className="flex flex-wrap">
+                        {post.topics?.map(topic => <div className="my-2 tag" key={topic}>{topic}</div>)}
                     </div>
                     <p>{(new Date(post.published)?.toDateString()?.slice(4))}</p>
                       
@@ -47,7 +46,3 @@ const Blogcard = ({ posts, label, headerTag, showNote=true }) => {
 };
 
 export default Blogcard;
-
-{/* <div>
-    {post.topics?.map(topic => <div className="inline-block tag mt-2" key={topic}>{topic}</div>)}
-</div> */}
