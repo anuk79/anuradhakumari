@@ -26,12 +26,12 @@ export async function getStaticProps() {
 
 export default function Home({ about, futureTalks, posts, mdDetails }) {
   return (
-    <section className="flex flex-wrap items-center px-4 sm:px-10 py-4 lg:py-16 max-w-7xl">
-      <div className="flex w-full justify-center bio">
+    <section className="flex flex-wrap items-center px-4 lg:px-8 py-8 lg:pb-12 max-w-7xl">
+      <div className="flex w-full justify-center head-section">
         <div className="max-w-3xl">
           <div className="flex items-center justify-center w-full">
             <Image width="70" height="70" src={about.person.photo.url} alt="" className="rounded-full"  />
-            <h1 className="px-4 text-4xl font-bold hidden sm:block">{about.title}</h1> 
+            <h1 className="px-4 text-3xl md:text-4xl font-bold hidden sm:block">{about.title}</h1> 
           </div>
           <p className="text-center pt-8 text-lg w-3xl font-semibold">
             {about.subtitle}

@@ -21,15 +21,17 @@ const Contact = () => {
       <Head>
         <title>Anuradha Kumari - Contact</title>
       </Head>
-      <h1 className="pt-4 pb-8 text-3xl">Contact Me</h1>
-      <div className="text-lg">
-        Feel free to {' '}
-        <a href="mailto:contact@anuradhakumari.com">drop me an email</a>
-        , to discuss about web development, accessibility or if you would like to invite me to speak at your events.
+      <div className="head-section">
+        <h1 className="pt-4 pb-8 text-3xl">Contact Me</h1>
+        <div className="text-lg">
+          Feel free to {' '}
+          <a href="mailto:contact@anuradhakumari.com">drop me an email</a>
+          , to discuss about web development, accessibility or if you would like to invite me to speak at your events.
 
-      </div>
-      <div className="py-4 text-lg">
-        You can also connect with me on twitter or linkedin via links in the footer.
+        </div>
+        <div className="py-4 text-lg">
+          You can also connect with me on twitter or linkedin via links in the footer.
+        </div>
       </div>
     </div>
   );

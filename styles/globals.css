@@ -76,12 +76,11 @@ header a:focus, footer a:focus {
   padding: 0 2px;
 }
 
-@media (min-width: 1024px) {
-  .bio {
-    border: 5px double var(--color-primary);
-    padding: 50px 20px 20px;
-    border-radius: 5px;
-  }
+.head-section {
+  border: 2px double var(--color-primary);
+  padding: 2rem 1.5rem 1rem;
+  box-shadow: 1rem 1rem 0 0 var(--color-primary);
+  margin: 2rem 0;
 }
 
 .buttoned {
@@ -109,10 +108,8 @@ header a:focus, footer a:focus {
   padding: 2px 8px;
   text-decoration: none;
   outline-offset: 3px;
-}
-
-.tag:not(:first-child) {
-  margin-left: 8px;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 a.svg-icon svg {

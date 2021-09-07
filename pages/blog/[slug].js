@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Head from 'next/head';
-import Image from 'next/image';
 import { getBlogs, getBlogPost } from '../../queries/getBlogs';
 import getPageDetails from '../../queries/getPageDetails';
 import markdownToHtml from '../../utils/markdownToHtml';
@@ -34,25 +33,28 @@ const Post = ({ post }) => {
       <Head>
         <title>Anuradha&apos;s blog - {post.title}</title>
       </Head>
-      <h1 className="text-4xl py-4 md:px-8">
-        {post.title}
-      </h1>
-      <div className="mx-auto mb-6">
-        <div className="flex items-center">
-          <div className="md:px-8">
-            <p className="text-gray-600 text-md mb-2">{(new Date(post.published)?.toDateString()?.slice(4))}</p>
-            <span className="inline-block my-2" style={{color: '#E14369'}}>
-              {post.topics?.map(topic => <span key={topic} className="tag">{topic}</span>)}
-            </span>
+      <div className="head-section">
+        <h1 className="text-3xl md:text-4xl py-4 md:px-8">
+          {post.title}
+        </h1>
+        <div className="mx-auto mb-6">
+          <div className="flex items-center">
+            <div className="md:px-8">
+              <p className="text-gray-600 text-md mb-2">{(new Date(post.published)?.toDateString()?.slice(4))}</p>
+              <span className="flex flex-wrap">
+                {post.topics?.map(topic => <span key={topic} className="tag">{topic}</span>)}
+              </span>
+            </div>
           </div>
-        </div>
-        <div className="bg-white md:px-8 rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
-          <div className="mb-8">
-            <div className={styles['markdown']} dangerouslySetInnerHTML={{ __html: post.mdContent }}></div>
-          </div>
-          
         </div>
       </div>
+
+      <div className="bg-white md:px-8 rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
+        <div className="mb-8">
+          <div className={styles['markdown']} dangerouslySetInnerHTML={{ __html: post.mdContent }}></div>
+        </div>
+      </div>
+      
       <div className="mx-auto mb-12">
         <Link href="/blog">
           <a className="buttoned">All blog posts</a>
