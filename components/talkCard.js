@@ -10,7 +10,7 @@ const TalkCard = ({ talks = [], label }) => {
             <div className="p-4 flex flex-col leading-normal h-full">
               <div>
                 <Link href={eventDetails.url}>
-                  <a className="inline-block pb-4 text-2xl">{eventDetails.name}</a>
+                  <a className="inline-block mb-4 text-2xl">{eventDetails.name}</a>
                 </Link>
                 <div className="text-gray-900 text-xl mb-2">{topic}</div>
                 <div className="text-base text-gray-600">
