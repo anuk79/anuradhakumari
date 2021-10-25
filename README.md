@@ -1,5 +1,6 @@
 # [Anuradha Kumari](https://www.anuradhakumari.com)
-This is my personal website. Work in progress.
+
+![Anuradha Kumari - GDE for Web, MDE, Accessibility advocate, developer, speaker, writer](https://github.com/anuk79/anuradhakumari/blob/main/public/og.png)
 
 ## Tech stack
 ### Coding
