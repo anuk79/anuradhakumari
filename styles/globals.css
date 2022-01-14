@@ -3,10 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --color-primary: #4f1f84;
+  --color-primary: rgb(52, 19, 70);
   --text-inverse: #fff;
   --bg-primary: #fff;
-  --link: #D13E61;  
+  --link: #D13E61; 
+  --text-tag: #410544; 
+  --bg-tag: #FEE9FF;
 }
 
 html,
@@ -45,14 +47,13 @@ a:focus {
   box-sizing: border-box;
 }
 
-h1 {
+h1, h2 {
   color: var(--color-primary);
 }
 
 header, footer {
   color: var(--text-inverse);
-  background-color: var(--color-primary);
-  /* background-image: linear-gradient(to right, #4f1f84, #691d84, #801a82, #941a80, #a71c7c); */
+  background: var(--color-primary);
 }
 
 header a, footer a {
@@ -85,11 +86,8 @@ header a:focus, footer a:focus {
 
 .buttoned {
   border: transparent;
-  color: white;
+  color: var(--text-inverse);
   background-color: var(--link);
-  /* background-image: linear-gradient(to right, #e14369, #d5366e, #c72b73, #b82278, #a71c7c);; */
-  /* background-image: linear-gradient(to right top, #e14369, #eb5163, #f35f5e, #fa6e59, #ff7d55); */
- /* background-image: linear-gradient(to right top, #d53369, #db5758, #d97752, #d39459, #cbad6d);  */
   border-radius: 8px;
   padding: 7px 10px 10px;
   text-decoration: none;
@@ -97,13 +95,15 @@ header a:focus, footer a:focus {
 }
 
 .buttoned:hover {
-  opacity: 0.85;
+  color: var(--link);
+  border: 2px solid var(--link);
+  background-color: var(--text-inverse);
 }
 
 .tag {
   border: transparent;
-  color: #410544;
-  background-color: #FEE9FF;
+  color: var(--text-tag);
+  background-color: var(--bg-tag);
   border-radius: 8px;
   padding: 2px 8px;
   text-decoration: none;

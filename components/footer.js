@@ -3,7 +3,7 @@ import SvgIcons from './Icons';
 
 function Footer({ navLinks = [] }) {
   return (
-    <footer className="px-4 sm:px-10 lg:px-28 py-4 lg:py-8 text-white">
+    <footer className="px-4 sm:px-10 lg:px-28 py-4 lg:py-8 text-inverse">
         <div className="text-center">
           {navLinks.length > 0 && (
               <nav aria-label="footer navigation">

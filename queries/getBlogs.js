@@ -30,7 +30,7 @@ export async function getRecentBlogs() {
         query {
             blogPosts(
                 orderBy: published_DESC
-                first: 14
+                first: 3
             ) {
                 id
                 title

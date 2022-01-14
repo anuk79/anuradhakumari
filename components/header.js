@@ -10,7 +10,8 @@ function Header({ navLinks = [] }) {
         <nav className="flex items-center justify-center md:justify-between flex-wrap space-x-4">
           <Link href="/">
             <a className="no-underline">
-              Anuradha Kumari
+              <span aria-hidden>{'<AK />'}</span>
+              <span className="sr-only">Anuradha Kumari</span>
             </a>
           </Link>
           {navLinks.length > 0 && (
@@ -38,7 +39,7 @@ function Header({ navLinks = [] }) {
           <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
           <link rel="manifest" href="/site.webmanifest"></link>
-          <meta name="og:title" content="Anuradha Kumari - a11y advocate, GDE for web, MDE" />
+          <meta name="og:title" content="Anuradha Kumari - a11y advocate, GDE, MVP, MDE" />
           <meta name="og:description" content="Frontend developer, making the web accessible - one website at a time." />
           <meta name="og:type" content="website" />
           <meta name="og:image" content="https://www.anuradhakumari.com/og.png" />
