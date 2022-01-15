@@ -1,9 +1,5 @@
-import { GraphQLClient } from "graphql-request";
 import Head from 'next/head';
-import Link from "next/link";
 import getPageDetails from '../../queries/getPageDetails';
-
-const graphcms = new GraphQLClient(process.env.GRAPHQL_URL_ENDPOINT);
 
 export async function getStaticProps() {
     const pageDetails = await getPageDetails();
@@ -19,7 +15,7 @@ const Contact = () => {
   return (
     <div className="py-2 md:py-16 px-2 sm:px-4 max-w-3xl">
       <Head>
-        <title>Anuradha Kumari - Contact</title>
+        <title>Contact - Anuradha Kumari</title>
       </Head>
       <div className="head-section">
         <h1 className="pt-4 pb-8 text-3xl">Contact Me</h1>

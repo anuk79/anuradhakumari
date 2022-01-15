@@ -29,7 +29,7 @@ const Talks = ({ pastTalks = [], futureTalks = [] }) => {
   return (
     <div className="pb-8 px-1 sm:px-4 max-w-4xl">
       <Head>
-        <title>Anuradha Kumari - Tech talks</title>
+        <title>Talks - Anuradha Kumari</title>
       </Head>
       <div className="head-section">
         <h1 className="text-3xl pt-4 font-bold">Tech talks</h1>

@@ -31,7 +31,7 @@ const Post = ({ post }) => {
   return (
     <div className="py-2 min-h-screen max-w-4xl w-full">
       <Head>
-        <title>Anuradha&apos;s blog - {post.title}</title>
+        <title>{post.title} - Anuradha&apos;s blog</title>
       </Head>
       <div className="head-section">
         <h1 className="text-3xl md:text-4xl py-4 md:px-8">

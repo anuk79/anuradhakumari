@@ -15,7 +15,7 @@ const About = ({ about = {} }) => {
   return (
     <div className="pb-8 px-2 sm:px-4 max-w-4xl">
       <Head>
-        <title>Anuradha Kumari - About</title>
+        <title>About - Anuradha Kumari</title>
       </Head>
       <h1>About me</h1>
       <div>
