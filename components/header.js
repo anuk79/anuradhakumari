@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 function Header({ navLinks = [] }) {
   return (
-    <header className="px-4 sm:px-10 lg:px-28 py-6 sticky top-0 z-10 text-base sm:text-lg">
+    <header className="px-4 sm:px-10 lg:px-28 py-6 sticky top-0 z-10 text-lg sm:text-xl">
        <a href="#main-content" className="skip-to-main-link">
           Skip to main content
         </a>
@@ -22,7 +22,7 @@ function Header({ navLinks = [] }) {
                   className="inline-block"
                 >
                   <Link href={`/${page.url}`}>
-                    <a className="my-2 mx-3 inline-block font-medium capitalize">
+                    <a className="my-2 mx-3 inline-block font-medium capitalize no-underline">
                       {page.label}
                     </a>
                   </Link>

@@ -91,11 +91,11 @@ export async function getStaticProps() {
 
 const Uses = () => {
     return (
-        <div className="py-4 md:pb-16 md:pt-12 px-2 sm:px-4 max-w-5xl">
+        <div className="py-4 md:pb-16 md:pt-12 px-2 sm:px-4 max-w-4xl">
             <Head>
                 <title>Things I use - Anuradha Kumari</title>
             </Head>
-            <h1 className="pt-4 pb-8 text-4xl">What do I use</h1>
+            <h1 className="pt-4 pb-8 text-4xl font-bold">What do I use</h1>
             <p className="text-lg pb-4">
                 I use a lot of different things. I use them for different purposes. I see the uses sections 
                 on lots of websites, so I thought I would create one for myself too. 

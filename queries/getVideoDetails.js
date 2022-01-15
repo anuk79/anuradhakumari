@@ -8,7 +8,7 @@ export async function getVideoDetails() {
             query {
                 videos(
                     orderBy: published_DESC
-                    first: 6
+                    first: 3
                 ) {
                     id
                     title

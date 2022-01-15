@@ -29,9 +29,8 @@ export async function getStaticProps() {
 }
 
 export default function Home({ about, futureTalks, posts, mdDetails, videos }) {
-  console.log({ videos })
   return (
-    <section className="flex flex-wrap items-center px-4 lg:px-8 py-12 sm:py-20 lg:pb-12 max-w-5xl">
+    <section className="flex flex-wrap items-center px-4 lg:px-8 py-12 sm:py-20 lg:pb-12 max-w-4xl">
       <div className="flex">
         <div className="w-full sm:w-3/4 sm:pr-12">
           <div className="w-full block sm:hidden flex justify-around pb-8">
@@ -49,17 +48,24 @@ export default function Home({ about, futureTalks, posts, mdDetails, videos }) {
           <Image width="200" height="200" src={about.person.photo.url} alt="" className="rounded-full" />
         </div>
       </div>
-      <div className="lg:pt-12 pb-8 w-full">
-        <VideoCard data={videos} label="I create videos on YouTube" />
+      <div className="py-4 md:py-8 w-full">
+        <VideoCard data={videos} label="I create YouTube videos" />
         <Link href="https://www.youtube.com/channel/UCzv8q9-tSIQuTDzgB1BgXMQ"><a className="text-lg buttoned">All videos</a></Link>
       </div>
-      <div className="lg:pt-12 pb-12 w-full">
+      <div className="py-4 md:py-8 w-full">
         <TalkCard talks={futureTalks} label="I speak at conferences" />
         <Link href="/talks"><a className="text-lg buttoned">All talks</a></Link>
       </div>
-      <div className="w-full">
+      <div className="py-4 md:py-8 w-full">
         <BlogCard posts={posts} label="I write articles" headerTag="h2" showNote={false} />
         <Link href="/blog"><a className="text-lg buttoned mb-8 lg:mb-0 inline-block">All blog posts</a></Link>
+      </div>
+      <div className="py-4 md:py-8 w-full">
+        <h2 className="py-4 text-3xl font-bold">I read</h2>
+        <p className="pb-4 text-lg">
+          Below contains list of books that I have read since 2021 and articles that I enjoyed reading and learned from since start of 2022.
+                    </p>
+        <Link href="/reading List"><a className="text-lg mb-8 pl-0 lg:mb-0 inline-block">Check my reading list</a></Link>
       </div>
     </section>
   );

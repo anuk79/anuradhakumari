@@ -1,8 +1,11 @@
 import LinkComponent from "./link";
 
-const List = ({ heading, data }) => (
+const List = ({ heading, data, headerTag = 'h2' }) => {
+  const HeadingTag = headerTag;
+  
+  return (
     <section>
-        <h2 className="pt-4 pb-2 text-2xl">{heading}</h2>
+        <HeadingTag className="pt-4 pb-2 text-2xl">{heading}</HeadingTag>
         <ul className="pt-4 pb-8">
             {data.map((item, index) => (
                 <li key={index}>
@@ -13,5 +16,6 @@ const List = ({ heading, data }) => (
         </ul>
     </section>
 );
+            }
 
 export default List;

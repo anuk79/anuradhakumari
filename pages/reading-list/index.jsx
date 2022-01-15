@@ -138,17 +138,17 @@ export async function getStaticProps() {
 
 const ReadingList = () => {
     return (
-        <div className="py-4 md:pb-16 md:pt-12 px-2 sm:px-4 max-w-5xl">
+        <div className="py-4 md:pb-16 md:pt-12 px-2 sm:px-4 max-w-4xl">
             <Head>
                 <title>Reading List - Anuradha Kumari</title>
             </Head>
-            <h1 className="pt-4 pb-8 text-4xl">My reading list</h1>
-            <p className="text-lg">
+            <h1 className="pt-4 pb-8 text-4xl font-bold">My reading list</h1>
+            <p className="text-lg pb-4">
                 I love reading, sometimes I read a lot. The below lists contain
                 the <a href="#books">books</a> and <a href="#articles">articles</a> I read.
             </p>
             <section id="books">
-                <h2 className="pt-4 pb-2 text-3xl">Books</h2>
+                <h2 className="pt-4 pb-2 text-3xl font-bold">Books</h2>
                 <p className="text-lg pb-4">
                     I loved reading from when I was a kid. I remember reading comics, and science magazines (Pratiyogita Darpan)
                     in one sitting. My parents used to scold me for reading too much (ah the irony of it),
@@ -169,19 +169,19 @@ const ReadingList = () => {
                     Object.keys(books)
                         .sort((d1, d2) => d1 > d2 ? -1 : d1 < d2 ? 1 : 0)
                         .map((key, index) => (
-                            <List key={index} heading={key} data={books[key]} />
+                            <List key={index} heading={key} headerTag="h3" data={books[key]} />
                         ))
                 }
             </section>
             <section id="articles">
-                <h2 className="pt-4 pb-2 text-3xl">Articles</h2>
+                <h2 className="pt-4 pb-2 text-3xl font-bold">Articles</h2>
                 <p className="text-lg">
                     Below contains list of articles that I enjoyed reading and maintaining this list will
                     help me to revisit these later as well as could be a source of reference for anyone who might find them useful.
                     If you came here and found something interesting, I would be happy to know about it.
                 </p>
                 {Object.keys(articles).map((key, index) => (
-                    <List key={index} heading={key} data={articles[key]} />
+                    <List key={index} heading={key} headerTag="h3" data={articles[key]} />
                 ))}
             </section>
         </div>

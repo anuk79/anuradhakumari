@@ -4,7 +4,7 @@ const Blogcard = ({ posts, label, headerTag, showNote = false }) => {
   const HeadingTag = headerTag || 'h1';
   return (
     <div className="py-2">
-      <HeadingTag className="py-4 text-3xl font-bold">{label}</HeadingTag>
+      <HeadingTag className="pt-8 md:pt-12 pb-8 text-3xl font-bold">{label}</HeadingTag>
       {showNote && <div className="pb-8">
         Note: This is work in progress list. I am working on migrating all my blog posts to the website. You can also {' '}
         <Link href="https://anuradhak.medium.com/"><a>read my blogs on medium</a></Link>.
@@ -20,7 +20,7 @@ const Blogcard = ({ posts, label, headerTag, showNote = false }) => {
                       <a>{post.title}</a>
                     </Link>
                   </div>
-                  {post.excerpt && <p className="text-gray-700 text-lg mt-4">{post.excerpt}</p>}
+                  {post.excerpt && <p className="text-gray-800 text-lg mt-4">{post.excerpt}</p>}
                 </div>
                 <time dateTime={post.published} className="text-base text-gray-600">
                   {(new Date(post.published)?.toDateString()?.slice(4))}
