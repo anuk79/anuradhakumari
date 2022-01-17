@@ -22,7 +22,7 @@ function Header({ navLinks = [] }) {
                   className="inline-block"
                 >
                   <Link href={`/${page.url}`}>
-                    <a className="my-2 mx-3 inline-block font-medium capitalize no-underline">
+                    <a className="my-2 mx-3 inline-block font-medium capitalize">
                       {page.label}
                     </a>
                   </Link>
