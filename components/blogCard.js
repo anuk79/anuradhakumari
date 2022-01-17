@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Blogcard = ({ posts, label, headerTag, showNote = false }) => {
+const Blogcard = ({ posts, label, headerTag, showNote = false, slugPrefix = 'blog' }) => {
   const HeadingTag = headerTag || 'h1';
   return (
     <div className="py-2">
@@ -16,7 +16,7 @@ const Blogcard = ({ posts, label, headerTag, showNote = false }) => {
               <div className="p-4 flex flex-col justify-between leading-normal">
                 <div className="mb-4">
                   <div className="font-bold text-2xl">
-                    <Link as={`/blog/${post.slug}`} href="/blog/[slug]">
+                    <Link as={`/${slugPrefix}/${post.slug}`} href={`/${slugPrefix}/[slug]`}>
                       <a>{post.title}</a>
                     </Link>
                   </div>

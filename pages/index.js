@@ -65,7 +65,7 @@ export default function Home({ about, futureTalks, posts, mdDetails, videos }) {
         <p className="pb-4 text-lg">
           Below contains list of books that I have read since 2021 and articles that I enjoyed reading and learned from since start of 2022.
                     </p>
-        <Link href="/reading List"><a className="text-lg mb-8 pl-0 lg:mb-0 inline-block">Check my reading list</a></Link>
+        <Link href="/reading-list"><a className="text-lg mb-8 pl-0 lg:mb-0 inline-block">Check my reading list</a></Link>
       </div>
     </section>
   );

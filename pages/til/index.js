@@ -21,7 +21,7 @@ const TIL = ({ posts }) => {
       <Head>
         <title>TIL - Anuradha Kumari</title>
       </Head>
-      <BlogCard posts={posts} label={`Today I learned (${posts?.length})`} />
+      <BlogCard posts={posts} label={`Today I learned (${posts?.length})`} slugPrefix="til" />
     </div>
   );
 };

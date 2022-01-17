@@ -56,8 +56,8 @@ const Post = ({ post }) => {
       </div>
       
       <div className="mx-auto mb-12">
-        <Link href="/blog">
-          <a className="buttoned">All blog posts</a>
+        <Link href="/til">
+          <a className="buttoned">All code tips</a>
         </Link>
       </div>
     </div>
