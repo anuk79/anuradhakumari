@@ -56,7 +56,7 @@ const Post = ({ post }) => {
       </div>
 
       <div className="mx-auto mb-12">
-        <Link href="/til">
+        <Link href="/tips">
           <a className="buttoned">All code tips</a>
         </Link>
       </div>

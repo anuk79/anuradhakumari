@@ -16,6 +16,10 @@ const books = {
             url: 'https://www.goodreads.com/book/show/58153391-developer-relations',
             displayText: 'Developer Relations: How to Build and Grow a Successful Developer Program',
         },
+        {
+            url: 'https://www.goodreads.com/book/show/4099.The_Pragmatic_Programmer',
+            displayText: 'The Pragmatic Programmer'
+        }
     ],
     2021: [
         {

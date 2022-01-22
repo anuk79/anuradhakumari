@@ -19,9 +19,9 @@ const TIL = ({ posts }) => {
   return (
     <div className="pb-2 px-2 sm:px-4 max-w-4xl">
       <Head>
-        <title>TIL - Anuradha Kumari</title>
+        <title>Tips - Anuradha Kumari</title>
       </Head>
-      <BlogCard posts={posts} label={`Today I learned (${posts?.length})`} slugPrefix="til" />
+      <BlogCard posts={posts} label={`Coding tips and snippets`} slugPrefix="tips" />
     </div>
   );
 };
