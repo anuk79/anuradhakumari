@@ -10,7 +10,7 @@ const books = {
         },
         {
             url: 'https://www.goodreads.com/book/show/40121378-atomic-habits',
-            displayText: 'Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones',
+            displayText: 'Atomic Habits',
         },
         {
             url: 'https://www.goodreads.com/book/show/58153391-developer-relations',
@@ -19,12 +19,16 @@ const books = {
         {
             url: 'https://www.goodreads.com/book/show/4099.The_Pragmatic_Programmer',
             displayText: 'The Pragmatic Programmer'
-        }
+        },
+        {
+            url: 'https://www.goodreads.com/book/show/36312164-accessibility-for-everyone',
+            displayText: 'Accessibility for everyone'
+        },
     ],
     2021: [
         {
             url: 'https://www.goodreads.com/book/show/31423133-make-your-bed',
-            displayText: 'Make Your Bed: Little Things That Can Change Your Life...And Maybe the World',
+            displayText: 'Make Your Bed: Little Things That Can Change Your Life',
         },
         {
             url: 'https://www.goodreads.com/book/show/40534545-ikigai',
@@ -40,7 +44,7 @@ const books = {
         },
         {
             url: 'https://www.goodreads.com/book/show/18290401-show-your-work',
-            displayText: 'Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered',
+            displayText: 'Show Your Work!',
         },
         {
             url: 'https://www.goodreads.com/book/show/759945.The_Magic_of_Thinking_Big',
@@ -52,7 +56,7 @@ const books = {
         },
         {
             url: 'https://www.goodreads.com/book/show/17166225-the-miracle-morning',
-            displayText: 'The Miracle Morning: The Not-So-Obvious Secret Guaranteed to Transform Your Life: Before 8AM',
+            displayText: 'The Miracle Morning',
         },
         {
             url: 'https://www.goodreads.com/book/show/2333956.The_Annotated_Turing',
@@ -80,7 +84,7 @@ const books = {
         },
         {
             url: 'https://www.goodreads.com/book/show/28675571-the-gifts-of-imperfection',
-            displayText: `The Gifts of Imperfection: Let Go of Who You Think You're Supposed to Be and Embrace Who You Are`,
+            displayText: `The Gifts of Imperfection`,
         },
         {
             url: 'https://www.goodreads.com/book/show/51603736-how-to-improve-your-writing',
@@ -122,6 +126,10 @@ const articles = {
         {
             url: 'https://12daysofweb.dev/2021/preference-queries/',
             displayText: 'Preference Queries',
+        },
+        {
+            url: 'https://makeitfable.com/article/ive-had-enough-when-access-friction-becomes-an-access-barrier/',
+            displayText: 'I’ve had enough! When access friction becomes an access barrier'
         },
         // {
         //     url: '',
