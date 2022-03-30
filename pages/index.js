@@ -50,7 +50,7 @@ export default function Home({ about, futureTalks, posts, mdDetails, videos }) {
       </div>
       <div className="py-4 md:py-8 w-full">
         <VideoCard data={videos} label="I create YouTube videos" />
-        <Link href="https://www.youtube.com/channel/UCzv8q9-tSIQuTDzgB1BgXMQ"><a className="text-lg buttoned">All videos</a></Link>
+        <Link href="https://www.youtube.com/c/AnuradhaK"><a className="text-lg buttoned">All videos</a></Link>
       </div>
       <div className="py-4 md:py-8 w-full">
         <TalkCard talks={futureTalks} label="I speak at conferences" />

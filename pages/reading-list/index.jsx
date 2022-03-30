@@ -24,6 +24,10 @@ const books = {
             url: 'https://www.goodreads.com/book/show/36312164-accessibility-for-everyone',
             displayText: 'Accessibility for everyone'
         },
+        {
+            url: 'https://www.goodreads.com/book/show/8696865-how-to-win-friends-influence-people',
+            displayText: 'How to Win Friends & Influence People'
+        },
     ],
     2021: [
         {
@@ -114,7 +118,7 @@ const books = {
 };
 
 const articles = {
-    'January 2022': [
+    '2022': [
         {
             url: 'https://medium.com/designing-atlassian/create-accessible-designs-using-the-figma-a11y-annotation-kit-35371f00dac5',
             displayText: 'Create accessible designs using the Figma A11y Annotation kit',
@@ -134,7 +138,27 @@ const articles = {
         {
             url: 'https://alistapart.com/article/breaking-out-of-the-box/',
             displayText: 'Breaking Out of the Box'
-        }
+        },
+        {
+            url: 'https://developers.google.com/search/docs/beginner/seo-starter-guide',
+            displayText: 'Search Engine Optimization (SEO) Starter Guide'
+        },
+        {
+            url: 'https://www.gov.uk/guidance/accessibility-monitoring-how-we-test',
+            displayText: 'Accessibility monitoring: How we test'
+        },
+        {
+            url: 'https://hbr.org/2020/12/why-you-need-to-stop-using-these-words-and-phrases',
+            displayText: 'Why You Need to Stop Using These Words and Phrases'
+        },
+        {
+            url: 'https://dev.to/abbeyperini/weve-been-here-since-the-beginning-2nnp',
+            displayText: "We've Been Here Since the Beginning"
+        },
+        {
+            url: 'https://dev.to/debs_obrien/being-an-imposter-4bl7',
+            displayText: 'Being an Imposter'
+        },
         // {
         //     url: '',
         //     displayText: '',
