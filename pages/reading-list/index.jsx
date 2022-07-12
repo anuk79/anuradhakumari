@@ -28,6 +28,18 @@ const books = {
             url: 'https://www.goodreads.com/book/show/8696865-how-to-win-friends-influence-people',
             displayText: 'How to Win Friends & Influence People'
         },
+        {
+            url: 'https://www.goodreads.com/book/show/26156469-never-split-the-difference',
+            displayText: 'Never Split the Difference'
+        },
+        {
+            url: 'https://www.goodreads.com/book/show/34964986-how-to-be-yourself',
+            displayText: 'How to Be Yourself'
+        },
+        {
+            url: 'https://www.goodreads.com/book/show/40109367-dare-to-lead',
+            displayText: 'Dare To Lead'
+        },
     ],
     2021: [
         {
@@ -159,6 +171,14 @@ const articles = {
             url: 'https://dev.to/debs_obrien/being-an-imposter-4bl7',
             displayText: 'Being an Imposter'
         },
+        {
+            url: 'https://hbr.org/2022/01/youre-not-an-imposter-youre-actually-pretty-amazing',
+            displayText: "You’re Not an Imposter. You’re Actually Pretty Amazing.",
+        },
+        {
+            url: 'https://incl.ca/basic-accessibility-testing/',
+            displayText: 'Basic Accessibility testing - by Nicolas Steenhout'
+        }
         // {
         //     url: '',
         //     displayText: '',
