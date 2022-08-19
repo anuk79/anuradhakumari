@@ -40,6 +40,34 @@ const books = {
             url: 'https://www.goodreads.com/book/show/40109367-dare-to-lead',
             displayText: 'Dare To Lead'
         },
+        {
+            url: 'https://www.goodreads.com/book/show/17859574-how-to-fail-at-almost-everything-and-still-win-big',
+            displayText: 'How to Fail at Almost Everything and Still Win Big'
+        },
+        {
+            url: 'https://www.goodreads.com/book/show/25813937-glory-over-everything',
+            displayText: 'Glory Over Everything: Beyond The Kitchen House'
+        },
+        {
+            url: 'https://www.goodreads.com/book/show/59007077-seo-for-everyone',
+            displayText: 'SEO For Everyone',
+        },
+        {
+            url: 'https://www.goodreads.com/book/show/22211296-how-to-deal-with-difficult-people',
+            displayText: 'How to Deal with Difficult People',
+        },
+        {
+            url: 'https://www.goodreads.com/book/show/31138556-homo-deus',
+            displayText: 'Homo Deus: A History of Tomorrow',
+        },
+        {
+            url: 'https://www.goodreads.com/book/show/84699.Never_Eat_Alone',
+            displayText: 'Never Eat Alone'
+        },
+        // {
+        //     url: '',
+        //     displayText: ''
+        // },
     ],
     2021: [
         {
@@ -178,11 +206,15 @@ const articles = {
         {
             url: 'https://incl.ca/basic-accessibility-testing/',
             displayText: 'Basic Accessibility testing - by Nicolas Steenhout'
-        }
+        },
+        {
+            url: 'https://www.matuzo.at/blog/2022/focus-outline/',
+            displayText: 'Outline is your friend',
+        },
         // {
         //     url: '',
         //     displayText: '',
-        // }
+        // },
     ],
 }
 

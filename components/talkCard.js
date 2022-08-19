@@ -2,10 +2,10 @@ import Link from "next/link";
 
 const TalkCard = ({ talks = [], label }) => {
   return (
-    <div>
+    <section>
       <h2 className="text-3xl py-4 font-bold">{label}</h2>
       <div className="grid grid-cols-1">
-        {talks?.map(({ id, topic, date, eventDetails, topics }) => (
+        {talks.map(({ id, topic, date, eventDetails, topics }) => (
           <div key={id} className="shadow-lg mb-8 w-full">
             <div className="p-4 flex flex-col leading-normal h-full">
               <div>
@@ -28,7 +28,7 @@ const TalkCard = ({ talks = [], label }) => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
