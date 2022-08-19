@@ -3,16 +3,14 @@ import SvgIcons from './Icons';
 
 function Footer({ navLinks = [] }) {
   return (
-    <footer className="px-4 sm:px-10 lg:px-28 py-4 lg:py-8 text-inverse">
+    <footer role="contentinfo" className="px-4 sm:px-10 lg:px-28 py-4 lg:py-8 text-inverse">
         <div className="text-center">
-          {navLinks.length > 0 && (
-              <nav aria-label="footer navigation">
+        {
+          navLinks.length > 0 && (<nav aria-label="footer">
                 <ul className="space-y-4">
                   {navLinks.map((link) => (
                     <li key={link.id} className="inline-block mx-4" >
-                      <Link
-                        href={link.url}
-                      >
+                      <Link href={link.url}>
                         <a className="inline-block no-underline p-0 svg-icon" aria-label={link.label}>
                           {SvgIcons[link.label]}
                         </a>
@@ -21,7 +19,8 @@ function Footer({ navLinks = [] }) {
                   ))}
                 </ul>
               </nav>
-            )}
+          )
+        }
         </div>
         <div className="py-6 text-center">
           Made using{' '} 

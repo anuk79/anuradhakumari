@@ -1,11 +1,11 @@
 import LinkComponent from "./link";
 
-const List = ({ heading, data, headerTag = 'h2' }) => {
+const List = ({ heading, data, headerTag = 'h2', ariaLabelForHeading = '' }) => {
   const HeadingTag = headerTag;
   
   return (
     <section>
-        <HeadingTag className="pt-4 pb-2 text-2xl">{heading}</HeadingTag>
+          <HeadingTag className="pt-4 pb-2 text-2xl" aria-label={ariaLabelForHeading + heading}>{heading}</HeadingTag>
         <ul className="pt-4 pb-8">
             {data.map((item, index) => (
                 <li key={index}>

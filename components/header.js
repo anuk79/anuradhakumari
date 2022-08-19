@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 function Header({ navLinks = [] }) {
   return (
-    <header className="px-4 sm:px-10 lg:px-28 py-6 sticky top-0 z-10 text-lg">
+    <header role="banner" className="px-4 sm:px-10 lg:px-28 py-6 sticky top-0 z-10 text-lg">
        <a href="#main-content" className="skip-to-main-link">
           Skip to main content
         </a>
