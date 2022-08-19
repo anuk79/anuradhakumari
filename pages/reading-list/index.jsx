@@ -261,7 +261,7 @@ const ReadingList = () => {
                     Object.keys(books)
                         .sort((d1, d2) => d1 > d2 ? -1 : d1 < d2 ? 1 : 0)
                         .map((key, index) => (
-                            <List key={index} heading={key} headerTag="h3" data={books[key]} />
+                            <List key={index} heading={key} headerTag="h3" data={books[key]} ariaLabelForHeading="Books I read in " />
                         ))
                 }
             </section>
@@ -273,7 +273,7 @@ const ReadingList = () => {
                     If you came here and found something interesting, I would be happy to know about it.
                 </p>
                 {Object.keys(articles).map((key, index) => (
-                    <List key={index} heading={key} headerTag="h3" data={articles[key]} />
+                    <List key={index} heading={key} headerTag="h3" data={articles[key]} ariaLabelForHeading="Articles I read in " />
                 ))}
             </section>
         </div>
