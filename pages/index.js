@@ -8,7 +8,7 @@ import { getRecentBlogs } from '../queries/getBlogs';
 import { getVideoDetails } from '../queries/getVideoDetails';
 import markdownToHtml from '../utils/markdownToHtml';
 import styles from '../styles/Home.module.css';
-import data from './talks/data';
+import talks from '../data/talks';
 
 export async function getStaticProps() {
   const pageDetails = await getPageDetails();
@@ -27,7 +27,7 @@ export async function getStaticProps() {
 }
 
 export default function Home({ about, posts, mdDetails, videos }) {
-  const futureTalks = data.filter(talk => new Date(talk.date) > new Date());
+  const futureTalks = talks.filter(talk => new Date(talk.date) > new Date());
 
   return (
     <section className="flex flex-wrap items-center px-4 lg:px-8 py-12 sm:py-20 lg:pb-12 max-w-4xl">

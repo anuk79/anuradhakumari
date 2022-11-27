@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Link from "next/link";
 import TalkCard from '../../components/talkCard';
 import getPageDetails from '../../queries/getPageDetails';
-import data from './data';
+import data from '../../data/talks';
 
 export async function getStaticProps() {
   const pageDetails = await getPageDetails();
