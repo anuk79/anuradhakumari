@@ -4,15 +4,14 @@ import TalkCard from '../components/talkCard';
 import BlogCard from '../components/blogCard';
 import VideoCard from '../components/videoCard';
 import getPageDetails from '../queries/getPageDetails';
-import { getFutureTalkDetails } from '../queries/getTalkDetails';
 import { getRecentBlogs } from '../queries/getBlogs';
 import { getVideoDetails } from '../queries/getVideoDetails';
 import markdownToHtml from '../utils/markdownToHtml';
 import styles from '../styles/Home.module.css';
+import data from './talks/data';
 
 export async function getStaticProps() {
   const pageDetails = await getPageDetails();
-  const futureTalks = await getFutureTalkDetails();
   const blogPosts = await getRecentBlogs();
   const videos = await getVideoDetails();
   const mdDetails = await markdownToHtml(pageDetails.about.details || '');
@@ -20,7 +19,6 @@ export async function getStaticProps() {
   return {
     props: {
       ...pageDetails,
-      ...futureTalks,
       posts: Object.values(blogPosts).filter(blog => blog.category !== 'TIL'),
       mdDetails,
       ...videos
@@ -28,12 +26,14 @@ export async function getStaticProps() {
   };
 }
 
-export default function Home({ about, futureTalks, posts, mdDetails, videos }) {
+export default function Home({ about, posts, mdDetails, videos }) {
+  const futureTalks = data.filter(talk => new Date(talk.date) > new Date());
+
   return (
     <section className="flex flex-wrap items-center px-4 lg:px-8 py-12 sm:py-20 lg:pb-12 max-w-4xl">
       <div className="flex">
         <div className="w-full sm:w-3/4 sm:pr-12">
-          <div className="w-full block sm:hidden flex justify-around pb-8">
+          <div className="w-full sm:hidden flex justify-around pb-8">
             <Image width="150" height="150" src={about.person.photo.url} alt="" className="rounded-full" />
           </div>
           <div>
@@ -56,7 +56,7 @@ export default function Home({ about, futureTalks, posts, mdDetails, videos }) {
         <TalkCard talks={futureTalks} label="I speak at conferences" />
         <Link href="/talks"><a className="text-lg buttoned">All talks</a></Link>
       </div>
-      <div className="py-4 md:py-8 w-full">
+      <div className="w-full">
         <BlogCard posts={posts} label="I write articles" headerTag="h2" showNote={false} />
         <Link href="/blog"><a className="text-lg buttoned mb-8 lg:mb-0 inline-block">All blog posts</a></Link>
       </div>
