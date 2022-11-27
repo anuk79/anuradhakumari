@@ -2,25 +2,24 @@ import Head from 'next/head';
 import Link from "next/link";
 import TalkCard from '../../components/talkCard';
 import getPageDetails from '../../queries/getPageDetails';
-import { getTalkDetails } from '../../queries/getTalkDetails';
+import data from './data';
 
 export async function getStaticProps() {
   const pageDetails = await getPageDetails();
-  const talkDetails = await getTalkDetails();
   // const topics = [...new Set(talkDetails.futureTalks.map(({ topics }) => topics).flat()),
   // ...new Set(talkDetails.pastTalks.map(({ topics }) => topics).flat())];
 
   return {
     props: {
       ...pageDetails,
-      futureTalks: talkDetails.futureTalks,
-      pastTalks: talkDetails.pastTalks,
-      // topics
     },
   };
 }
 
-const Talks = ({ pastTalks = [], futureTalks = [], }) => {
+const Talks = ({ }) => {
+  const pastTalks = data.filter(talk => new Date(talk.date) <= new Date());
+  const futureTalks = data.filter(talk => new Date(talk.date) > new Date());
+
   return (
     <div className="pb-8 px-1 sm:px-4 max-w-4xl">
       <Head>
