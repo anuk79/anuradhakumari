@@ -33,8 +33,8 @@ export default function Home({ about, posts, mdDetails, videos }) {
     <section className="flex flex-wrap items-center px-4 lg:px-8 py-12 sm:py-20 lg:pb-12 max-w-4xl">
       <div className="flex">
         <div className="w-full sm:w-3/4 sm:pr-12">
-          <div className="w-full sm:hidden flex justify-around pb-8">
-            <Image width="150" height="150" src={about.person.photo.url} alt="" className="rounded-full" />
+          <div className="w-full sm:hidden flex justify-around pb-4">
+            <Image width="150" height="150" src="/android-chrome-512x512.png" alt="" />
           </div>
           <div>
             <h1 className="pr-4 text-3xl md:text-4xl font-bold text-center sm:text-left">{about.title}</h1>
@@ -45,7 +45,7 @@ export default function Home({ about, posts, mdDetails, videos }) {
           </div>
         </div>
         <div className="sm:w-1/4 hidden sm:block">
-          <Image width="200" height="200" src={about.person.photo.url} alt="" className="rounded-full" />
+          <Image width="200" height="200" src="/android-chrome-512x512.png" alt="" />
         </div>
       </div>
       <div className="py-4 md:py-8 w-full">
