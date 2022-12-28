@@ -1,17 +1,14 @@
 import Link from "next/link";
 import Head from 'next/head';
 import { getBlogs, getBlogPost } from '../../queries/getBlogs';
-import getPageDetails from '../../queries/getPageDetails';
 import markdownToHtml from '../../utils/markdownToHtml';
 import styles from '../../styles/Home.module.css';
 
 export async function getStaticProps({ params }) {
-    const pageDetails = await getPageDetails();
     const { post } = await getBlogPost(params.slug);
     const mdContent = await markdownToHtml(post.content || '')
     return {
-        props: {
-          ...pageDetails,
+      props: {
           post: {...post, mdContent},
         },
     };

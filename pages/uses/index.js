@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import List from "../../components/list";
-import getPageDetails from '../../queries/getPageDetails';
 
 const data = {
     Hardware: [
@@ -77,16 +76,6 @@ const data = {
             description: 'For planning the content and journalling in general'
         }
     ],
-}
-
-export async function getStaticProps() {
-    const pageDetails = await getPageDetails();
-
-    return {
-        props: {
-            ...pageDetails
-        },
-    };
 }
 
 const Uses = () => {

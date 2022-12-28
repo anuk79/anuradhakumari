@@ -1,20 +1,17 @@
 import Head from 'next/head';
 import Link from "next/link";
 import TalkCard from '../../components/talkCard';
-import getPageDetails from '../../queries/getPageDetails';
 import data from '../../data/talks';
 
-export async function getStaticProps() {
-  const pageDetails = await getPageDetails();
-  // const topics = [...new Set(talkDetails.futureTalks.map(({ topics }) => topics).flat()),
-  // ...new Set(talkDetails.pastTalks.map(({ topics }) => topics).flat())];
+// export async function getStaticProps() {
+//   // const topics = [...new Set(talkDetails.futureTalks.map(({ topics }) => topics).flat()),
+//   // ...new Set(talkDetails.pastTalks.map(({ topics }) => topics).flat())];
 
-  return {
-    props: {
-      ...pageDetails,
-    },
-  };
-}
+//   return {
+//     props: {
+//     },
+//   };
+// }
 
 const Talks = ({ }) => {
   const pastTalks = data.filter(talk => new Date(talk.date) <= new Date());

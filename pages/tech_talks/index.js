@@ -1,18 +1,15 @@
 import Head from 'next/head';
 import Link from "next/link";
 import TalkCard from '../../components/talkCard';
-import getPageDetails from '../../queries/getPageDetails';
 import { getTalkDetails } from '../../queries/getTalkDetails';
 
 export async function getStaticProps() {
-  const pageDetails = await getPageDetails();
   const talkDetails = await getTalkDetails();
   // const topics = [...new Set(talkDetails.futureTalks.map(({ topics }) => topics).flat()),
   // ...new Set(talkDetails.pastTalks.map(({ topics }) => topics).flat())];
 
   return {
     props: {
-      ...pageDetails,
       futureTalks: talkDetails.futureTalks,
       pastTalks: talkDetails.pastTalks,
       // topics

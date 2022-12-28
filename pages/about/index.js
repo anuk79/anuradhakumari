@@ -1,15 +1,4 @@
 import Head from 'next/head';
-import getPageDetails from '../../queries/getPageDetails';
-
-export async function getStaticProps() {
-    const pageDetails = await getPageDetails();
-  
-    return {
-      props: {
-        ...pageDetails
-      },
-    };
-  }
 
 const About = ({ about = {} }) => {
   return (

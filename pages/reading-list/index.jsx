@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import List from "../../components/list";
-import getPageDetails from '../../queries/getPageDetails';
 
 const books = {
     2022: [
@@ -216,16 +215,6 @@ const articles = {
         //     displayText: '',
         // },
     ],
-}
-
-export async function getStaticProps() {
-    const pageDetails = await getPageDetails();
-
-    return {
-        props: {
-            ...pageDetails
-        },
-    };
 }
 
 const ReadingList = () => {

@@ -1,7 +1,34 @@
 import Link from 'next/link';
 import Head from 'next/head';
 
-function Header({ navLinks = [] }) {
+const links = [
+  {
+    "label": "talks",
+    "url": "talks"
+  },
+  {
+    "label": "blog",
+    "url": "blog"
+  },
+  {
+    "label": "Tips",
+    "url": "tips"
+  },
+  {
+    "label": "Reads",
+    "url": "reading-list"
+  },
+  {
+    "label": "Uses",
+    "url": "uses"
+  },
+  {
+    "label": "Contact",
+    "url": "contact"
+  }
+];
+
+function Header({ navLinks = links }) {
   return (
     <header role="banner" className="px-4 sm:px-10 lg:px-28 py-6 sticky top-0 z-10 text-lg">
        <a href="#main-content" className="skip-to-main-link">
