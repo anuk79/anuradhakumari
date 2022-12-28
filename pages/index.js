@@ -4,23 +4,22 @@ import TalkCard from '../components/talkCard';
 import BlogCard from '../components/blogCard';
 import VideoCard from '../components/videoCard';
 import { getRecentBlogs } from '../queries/getBlogs';
-import { getVideoDetails } from '../queries/getVideoDetails';
 import talks from '../data/talks';
+import videos from '../data/videos';
 
 export async function getStaticProps() {
   const blogPosts = await getRecentBlogs();
-  const videos = await getVideoDetails();
 
   return {
     props: {
       posts: Object.values(blogPosts).filter(blog => blog.category !== 'TIL'),
-      ...videos
     },
   };
 }
 
-export default function Home({ posts, videos }) {
+export default function Home({ posts }) {
   const futureTalks = talks.filter(talk => new Date(talk.date) > new Date());
+
   debugger;
   return (
     <section className="flex flex-wrap items-center px-4 lg:px-8 py-12 sm:py-20 lg:pb-12 max-w-4xl">
