@@ -9,7 +9,6 @@ export async function getStaticProps({ params }) {
   const mdContent = await markdownToHtml(post.content || '');
   return {
     props: {
-      ...pageDetails,
       post: { ...post, mdContent },
     },
   };
