@@ -7,7 +7,6 @@ export async function getStaticProps() {
 
   return {
     props: {
-      ...pageDetails,
       posts: Object.values(posts),
     },
   };
