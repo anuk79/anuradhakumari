@@ -9,18 +9,20 @@ export async function getStaticProps({ params }) {
     const mdContent = await markdownToHtml(post.content || '')
     return {
       props: {
-          post: {...post, mdContent},
-        },
+        post: { ...post, mdContent },
+        revalidate: 10,
+      },
     };
 }
 
 export async function getStaticPaths() {
-    const posts = await getBlogs();
+    // const posts = await getBlogs();
     return {
-        paths: Object.values(posts).map(({ slug }) => ({
-        params: { slug },
-        })),
-        fallback: false,
+      // paths: Object.values(posts).map(({ slug }) => ({
+      // params: { slug },
+      // })),
+      paths: [],
+      fallback: 'blocking',
     };
 }
 
