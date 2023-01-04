@@ -1,4 +1,18 @@
 const talks = [
+   {
+    "topic": "Decoding web accessibility through testing",
+    "topics": [
+      "Accessibility",
+      "Testing"
+    ],
+    "date": "2022-12-15",
+    "eventDetails": {
+      "url": "https://www.weyweyweb.com/",
+      "name": "Wey Wey Web, Malaga",
+      "video": null,
+      "resources": null
+    }
+  },
   {
     "topic": "Decoding web accessibility through testing",
     "topics": [
