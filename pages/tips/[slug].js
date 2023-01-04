@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Head from 'next/head';
-import { getBlogs, getBlogPost } from '../../queries/getBlogs';
+import { getBlogPost } from '../../queries/getBlogs';
 import markdownToHtml from '../../utils/markdownToHtml';
 import styles from '../../styles/Home.module.css';
 
@@ -10,17 +10,15 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       post: { ...post, mdContent },
+      revalidate: 10,
     },
   };
 }
 
 export async function getStaticPaths() {
-  const posts = await getBlogs('TIL');
   return {
-    paths: Object.values(posts).map(({ slug }) => ({
-      params: { slug },
-    })),
-    fallback: false,
+    paths: [],
+    fallback: 'blocking',
   };
 }
 
