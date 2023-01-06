@@ -1,4 +1,18 @@
 const talks = [
+    {
+    "topic": "Decoding web accessibility through testing",
+    "topics": [
+      "Accessibility",
+      "Testing"
+    ],
+    "date": "2023-1-26",
+    "eventDetails": {
+      "url": "https://vuejsnation.com/",
+      "name": "VueJS Nation",
+      "video": null,
+      "resources": null
+    }
+  },
    {
     "topic": "Decoding web accessibility through testing",
     "topics": [
