@@ -20,7 +20,7 @@ const Blogcard = ({ posts, label, headerTag, showNote = false, slugPrefix = 'blo
                       <a>{post.title}</a>
                     </Link>
                   </div>
-                  {post.excerpt && <p className="text-gray-800 text-lg mt-4">{post.excerpt}</p>}
+                  {/* {!!post.excerpt && <p className="text-gray-800 text-lg mt-4">{post.excerpt}</p>} */}
                 </div>
                 <time dateTime={post.published} className="text-base text-gray-600">
                   {(new Date(post.published)?.toDateString()?.slice(4))}

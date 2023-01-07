@@ -36,7 +36,6 @@ export async function getRecentBlogs() {
                 id
                 title
                 slug
-                excerpt
                 category
                 published
                 topics

@@ -10,9 +10,9 @@ const TalkCard = ({ talks = [], label }) => {
             <div className="p-4 flex flex-col leading-normal h-full">
               <div>
                 <Link href={eventDetails.url}>
-                  <a className="inline-block mb-4 text-2xl">{topic}</a>
+                  <a className="inline-block mb-4 text-2xl">{eventDetails.name}</a>
                 </Link>
-                <p className="text-gray-900 text-xl mb-2">{eventDetails.name}</p>
+                <p className="text-gray-900 text-xl mb-2">{topic}</p>
                 <time dateTime={date} className="text-base text-gray-700">
                   {(new Date(date)?.toDateString()?.slice(4))}
                 </time>

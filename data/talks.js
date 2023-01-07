@@ -92,7 +92,7 @@ const talks = [
     "date": "2022-09-16",
     "eventDetails": {
       "url": "https://2022.jsconf.kr/en/speakers",
-      "name": "JSConf Korea, 2022",
+      "name": "JSConf Korea",
       "video": null,
       "resources": null
     }
@@ -695,20 +695,6 @@ const talks = [
     "eventDetails": {
       "url": "https://www.globant.com/",
       "name": "Internal event at Globant",
-      "video": null,
-      "resources": null
-    }
-  },
-  {
-    "topic": "Decoding web accessibility through testing",
-    "topics": [
-      "Accessibility",
-      "Testing"
-    ],
-    "date": "2022-12-15",
-    "eventDetails": {
-      "url": "https://www.weyweyweb.com/",
-      "name": "Wey Wey Web, Malaga",
       "video": null,
       "resources": null
     }
