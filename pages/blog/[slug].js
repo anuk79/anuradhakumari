@@ -15,7 +15,6 @@ export async function getStaticProps({ params }) {
     'category'
   ]);
   const content = await markdownToHtml(post.content || '');
-  console.log({ content });
   return {
     props: {
       post: {
@@ -27,7 +26,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const posts = getAllPosts(['slug']);
+  const posts = getAllPosts(['slug', 'published', 'category']);
 
   return {
     paths: posts.map((post) => {

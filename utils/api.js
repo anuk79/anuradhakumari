@@ -15,7 +15,6 @@ export function getPostBySlug(slug, fields = []) {
   const { data, content } = matter(fileContents);
 
   const items = {};
-
   // Ensure only the minimal needed data is exposed
   fields.forEach((field) => {
     if (field === 'slug') {
@@ -24,7 +23,6 @@ export function getPostBySlug(slug, fields = []) {
     if (field === 'content') {
       items[field] = content;
     }
-
     if (typeof data[field] !== 'undefined') {
       items[field] = data[field];
     }
@@ -46,6 +44,5 @@ export function getAllPosts(fields = ['slug', 'title', 'published', 'category'],
     }, [])
     // sort posts by date in descending order
     .sort((post1, post2) => (post1.published > post2.published ? -1 : 1));
-
   return posts;
 }
