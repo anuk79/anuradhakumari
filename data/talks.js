@@ -1,5 +1,33 @@
 const talks = [
     {
+    "topic": "GDE for web technologies",
+    "topics": [
+      "Google",
+      "GDE"
+    ],
+    "date": "2023-2-23",
+    "eventDetails": {
+      "url": "https://gdg.community.dev/events/details/google-gdg-johannesburg-presents-all-things-google-communities-and-professionals/",
+      "name": "All things Google Communities and Professionals - GDG Johannesburg",
+      "video": null,
+      "resources": null
+    }
+  },
+     {
+    "topic": "Decoding web accessibility through testing",
+    "topics": [
+      "Accessibility",
+      "Testing"
+    ],
+    "date": "2023-2-15",
+    "eventDetails": {
+      "url": "https://techa11y.dev/",
+      "name": "Tech A11Y",
+      "video": null,
+      "resources": null
+    }
+  },
+    {
     "topic": "Decoding web accessibility through testing",
     "topics": [
       "Accessibility",
