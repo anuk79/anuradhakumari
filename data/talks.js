@@ -1,5 +1,33 @@
 const talks = [
     {
+    "topic": "Learn Next.js: Develop Scalable and High Performance Web Applications",
+    "topics": [
+      "NextJS",
+      "Workshop"
+    ],
+    "date": "2023-3-23",
+    "eventDetails": {
+      "url": "https://learning.oreilly.com/live-events/learn-nextjs-develop-scalable-and-high-performance-web-applications/0636920081393/",
+      "name": "O'Reilly Workshop",
+      "video": null,
+      "resources": null
+    }
+  },
+    {
+    "topic": "Learn Next.js: Develop Scalable and High Performance Web Applications",
+    "topics": [
+      "NextJS",
+      "Workshop"
+    ],
+    "date": "2023-1-23",
+    "eventDetails": {
+      "url": "https://learning.oreilly.com/live-events/learn-nextjs-develop-scalable-and-high-performance-web-applications/0636920081393/",
+      "name": "O'Reilly Workshop",
+      "video": null,
+      "resources": null
+    }
+  },
+    {
     "topic": "GDE for web technologies",
     "topics": [
       "Google",
