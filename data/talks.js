@@ -5,7 +5,7 @@ const talks = [
       "NextJS",
       "Workshop"
     ],
-    "date": "2023-3-23",
+    "date": "2023-3-14",
     "eventDetails": {
       "url": "https://learning.oreilly.com/live-events/learn-nextjs-develop-scalable-and-high-performance-web-applications/0636920081393/",
       "name": "O'Reilly Workshop",
@@ -19,7 +19,7 @@ const talks = [
       "NextJS",
       "Workshop"
     ],
-    "date": "2023-1-23",
+    "date": "2023-1-10",
     "eventDetails": {
       "url": "https://learning.oreilly.com/live-events/learn-nextjs-develop-scalable-and-high-performance-web-applications/0636920081393/",
       "name": "O'Reilly Workshop",
