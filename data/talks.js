@@ -1,4 +1,43 @@
 const talks = [
+{
+    "topic": "Decoding web accessibility through testing",
+    "topics": [
+      "Accessibility",
+    ],
+    "date": "2023-6-6",
+    "eventDetails": {
+      "url": "https://events.geekle.us/vuejs23/",
+      "name": "Vue JS Global Summit'23",
+      "video": null,
+      "resources": null
+    }
+  },
+    {
+    "topic": "Making Interactions Accessible to All Users",
+    "topics": [
+      "Accessibility",
+    ],
+    "date": "2023-6-2",
+    "eventDetails": {
+      "url": "https://reactsummit.com/",
+      "name": "React Summit, Amsterdam",
+      "video": null,
+      "resources": null
+    }
+  },
+    {
+    "topic": "Accessible Web Development",
+    "topics": [
+      "Accessibility",
+    ],
+    "date": "2023-4-22",
+    "eventDetails": {
+      "url": "https://www.pesto.tech/",
+      "name": "Pesto event",
+      "video": null,
+      "resources": null
+    }
+  },
     {
     "topic": "Learn Next.js: Develop Scalable and High Performance Web Applications",
     "topics": [
