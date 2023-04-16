@@ -32,7 +32,7 @@ const talks = [
     ],
     "date": "2023-4-22",
     "eventDetails": {
-      "url": "https://www.pesto.tech/",
+      "url": "https://www.pesto.tech/events/want-to-build-a-winning-website",
       "name": "Pesto event",
       "video": null,
       "resources": null
