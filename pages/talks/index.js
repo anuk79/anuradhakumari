@@ -14,8 +14,8 @@ import data from '../../data/talks';
 // }
 
 const Talks = ({ }) => {
-  const pastTalks = data.filter(talk => new Date(talk.date) <= new Date());
-  const futureTalks = data.filter(talk => new Date(talk.date) > new Date());
+  const pastTalks = data.filter(talk => new Date(talk.date) < new Date());
+  const futureTalks = data.filter(talk => new Date(talk.date) >= new Date());
 
   return (
     <div className="pb-8 px-1 sm:px-4 max-w-4xl">
