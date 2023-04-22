@@ -14,7 +14,11 @@ import data from '../../data/talks';
 // }
 
 const Talks = ({ }) => {
-  const pastTalks = data.filter(talk => new Date(talk.date) < new Date());
+  const pastTalks = data.filter(talk => {
+    const a = new Date(talk.date) < new Date();
+    console.log(a, talk.date);
+    return a;
+  });
   const futureTalks = data.filter(talk => new Date(talk.date) >= new Date());
 
   return (

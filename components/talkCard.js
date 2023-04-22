@@ -4,9 +4,9 @@ const TalkCard = ({ talks = [], label }) => {
   return (
     <section>
       <h2 className="text-3xl py-4 font-bold">{label}</h2>
-      <div className="grid grid-cols-1">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {talks.map(({ id, topic, date, eventDetails, topics }) => (
-          <div key={id} className="shadow-lg mb-8 w-full">
+          <div key={id} className="shadow-lg mb-4 w-full">
             <div className="p-4 flex flex-col leading-normal h-full">
               <div>
                 <Link href={eventDetails.url}>
