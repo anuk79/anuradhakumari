@@ -26,6 +26,19 @@ const talks = [
     }
   },
     {
+    "topic": "Mighty bites - a11y",
+    "topics": [
+      "Accessibility",
+    ],
+    "date": "2023-5-3",
+    "eventDetails": {
+      "url": "https://vuejsforge.com/",
+      "name": "Vue JS Forge",
+      "video": null,
+      "resources": null
+    }
+  },
+    {
     "topic": "Accessible Web Development",
     "topics": [
       "Accessibility",
