@@ -92,10 +92,13 @@ header a:focus, footer a:focus {
   padding: 7px 10px 10px;
   text-decoration: none;
   outline-offset: 3px;
+  display: inline-block;
+  margin-top: 5px;
 }
 
 .buttoned:hover {
   color: var(--link);
+  padding: 5px 10px 8px;
   border: 2px solid var(--link);
   background-color: var(--text-inverse);
 }

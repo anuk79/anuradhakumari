@@ -7,7 +7,7 @@ const talks = [
     "date": "2023-6-6",
     "eventDetails": {
       "url": "https://events.geekle.us/vuejs23/",
-      "name": "Vue JS Global Summit'23",
+      "name": "Vue JS Global Summit",
       "video": null,
       "resources": null
     }
