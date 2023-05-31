@@ -26,6 +26,19 @@ const talks = [
     }
   },
     {
+    "topic": "Web accessibility",
+    "topics": [
+      "Accessibility",
+    ],
+    "date": "2023-5-31",
+    "eventDetails": {
+      "url": "https://www.meetup.com/girlcodemeetups/events/293678956/",
+      "name": "Storyblok GirlCode break time",
+      "video": null,
+      "resources": null
+    }
+  },
+    {
     "topic": "Mighty bites - a11y",
     "topics": [
       "Accessibility",
