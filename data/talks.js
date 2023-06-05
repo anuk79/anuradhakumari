@@ -1,4 +1,56 @@
 const talks = [
+    {
+    "topic": "Making Interactions Accessible to All Users",
+    "topics": [
+      "Accessibility",
+    ],
+    "date": "2023-10-25",
+    "eventDetails": {
+      "url": "https://www.telerik.com/devreach",
+      "name": "DevReach, Sofia",
+      "video": null,
+      "resources": null
+    }
+  },
+    {
+    "topic": "Making Interactions Accessible to All Users",
+    "topics": [
+      "Accessibility",
+    ],
+    "date": "2023-10-23",
+    "eventDetails": {
+      "url": "https://javascript-conference.com/munich/program-munich/",
+      "name": "iJS, Munich",
+      "video": null,
+      "resources": null
+    }
+  },
+    {
+    "topic": "Decoding web accessibility through testing",
+    "topics": [
+      "Accessibility",
+    ],
+    "date": "2023-8-31",
+    "eventDetails": {
+      "url": "https://frontconference.com/speakers",
+      "name": "Front Conference, Zurich",
+      "video": null,
+      "resources": null
+    }
+  },
+    {
+    "topic": "Making Interactions Accessible to All Users",
+    "topics": [
+      "Accessibility",
+    ],
+    "date": "2023-7-18",
+    "eventDetails": {
+      "url": "https://berlin.cityjsconf.org/",
+      "name": "City JS, Berlin",
+      "video": null,
+      "resources": null
+    }
+  },
 {
     "topic": "Decoding web accessibility through testing",
     "topics": [
@@ -8,6 +60,19 @@ const talks = [
     "eventDetails": {
       "url": "https://events.geekle.us/vuejs23/",
       "name": "Vue JS Global Summit",
+      "video": null,
+      "resources": null
+    }
+  },
+    {
+    "topic": "Group Discussion - Public Speaking",
+    "topics": [
+      "Speaking",
+    ],
+    "date": "2023-6-6",
+    "eventDetails": {
+      "url": "https://reactsummit.com/",
+      "name": "React Summit, Amsterdam",
       "video": null,
       "resources": null
     }
