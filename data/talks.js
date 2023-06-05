@@ -69,7 +69,7 @@ const talks = [
     "topics": [
       "Speaking",
     ],
-    "date": "2023-6-6",
+    "date": "2023-6-2",
     "eventDetails": {
       "url": "https://reactsummit.com/",
       "name": "React Summit, Amsterdam",
