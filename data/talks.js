@@ -43,7 +43,7 @@ const talks = [
     "topics": [
       "Accessibility",
     ],
-    "date": "2023-7-18",
+    "date": "2023-8-18",
     "eventDetails": {
       "url": "https://berlin.cityjsconf.org/",
       "name": "City JS, Berlin",
