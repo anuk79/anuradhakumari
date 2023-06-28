@@ -43,10 +43,23 @@ const talks = [
     "topics": [
       "Accessibility",
     ],
-    "date": "2023-8-18",
+    "date": "2023-11-03",
     "eventDetails": {
       "url": "https://berlin.cityjsconf.org/",
       "name": "City JS, Berlin",
+      "video": null,
+      "resources": null
+    }
+  },
+    {
+    "topic": "Making Interactions Accessible to All Users",
+    "topics": [
+      "Accessibility",
+    ],
+    "date": "2023-07-28",
+    "eventDetails": {
+      "url": "https://www.wearedevelopers.com/world-congress/",
+      "name": "WeAreDevelopers World Congress, Berlin",
       "video": null,
       "resources": null
     }
