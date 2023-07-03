@@ -18,8 +18,8 @@ const Intro = () => {
             {about.subtitle}
           </p>
           <p>
-            I am working as a frontend consultant at {' '}
-            <a href="https://www.linkedin.com/company/passionatepeoplenl/mycompany/" target="_blank" rel="noopener noreferrer">Passionate People</a>.
+            I am a senior frontend developer, with experience of more than 9.5 years. I have extensive experience in HTML, CSS, JavaScript, React, and Next JS with a focus on web accessibility, user experience, performance, and test-driven development.
+            <br /> 
             I am also a {' '} <a href="https://developers.google.com/community/experts" target="_blank" rel="noopener noreferrer">Google Developers Expert</a> for Web technologies,
             <a href='https://cloudinary.com/mde' target="_blank" rel="noopener noreferrer">Cloudinary Media Developer Expert</a>, {' '}
             <a href="https://mvp.microsoft.com/en-us/PublicProfile/5004678?fullName=Anuradha%20Kumari" target="_blank" rel="noopener noreferrer">Microsoft Most Valuable Professional</a> for Developer Technologies, {' '}
