@@ -1,16 +1,16 @@
-import { getBlogs } from '../../queries/getBlogs';
 import BlogCard from '../../components/blogCard';
 import Head from 'next/head';
+import { getAllPosts } from '../../utils/api';
 
 export async function getStaticProps() {
-    const posts = await getBlogs();
-  
-    return {
-      props: {
-        posts: Object.values(posts),
-      },
-    };
-  }
+  const posts = await getAllPosts();
+
+  return {
+    props: {
+      posts,
+    },
+  };
+}
 
 const Blog = ({ posts }) => {
   return (
