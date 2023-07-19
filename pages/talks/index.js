@@ -3,23 +3,11 @@ import Link from "next/link";
 import TalkCard from '../../components/talkCard';
 import data from '../../data/talks';
 
-// export async function getStaticProps() {
-//   // const topics = [...new Set(talkDetails.futureTalks.map(({ topics }) => topics).flat()),
-//   // ...new Set(talkDetails.pastTalks.map(({ topics }) => topics).flat())];
-
-//   return {
-//     props: {
-//     },
-//   };
-// }
-
 const Talks = ({ }) => {
   const pastTalks = data.filter(talk => {
-    const a = new Date(talk.date) < new Date();
-    console.log(a, talk.date);
-    return a;
+    return new Date(talk.date) < new Date();
   });
-  const futureTalks = data.filter(talk => new Date(talk.date) >= new Date());
+  const futureTalks = data.filter(talk => new Date(talk.date) >= new Date()).sort((a, b) => new Date(a.date) - new Date(b.date));
 
   return (
     <div className="pb-8 px-1 sm:px-4 max-w-4xl">
