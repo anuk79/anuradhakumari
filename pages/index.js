@@ -18,7 +18,7 @@ export async function getStaticProps() {
 }
 
 export default function Home({ posts }) {
-  const futureTalks = talks.filter(talk => new Date(talk.date) > new Date());
+  const futureTalks = talks.filter(talk => new Date(talk.date) > new Date()).sort((a, b) => new Date(a.date) - new Date(b.date));
 
   return (
     <section className="flex flex-wrap items-center px-4 lg:px-8 py-12 sm:py-20 lg:pb-12 max-w-4xl">
