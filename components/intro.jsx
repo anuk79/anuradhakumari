@@ -30,8 +30,6 @@ const Intro = () => {
       <div className="w-full sm:w-3/4 sm:pr-12">
         <div className="w-full sm:hidden flex justify-around pb-4">
           <Image width="150" height="150" src="/android-chrome-512x512.png" alt=""
-            placeholder="blur"
-            blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(150, 150))}`}
           />
         </div>
         <div>
@@ -52,8 +50,6 @@ const Intro = () => {
       </div>
       <div className="sm:w-1/4 hidden sm:block">
         <Image width="200" height="200" src="/android-chrome-512x512.png" alt=""
-          placeholder="blur"
-          blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(200, 200))}`}
         />
       </div>
     </div>
