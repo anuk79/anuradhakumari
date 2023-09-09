@@ -38,19 +38,19 @@ const talks = [
       "resources": null
     }
   },
-    {
-    "topic": "Making Interactions Accessible to All Users",
-    "topics": [
-      "Accessibility",
-    ],
-    "date": "2023-11-03",
-    "eventDetails": {
-      "url": "https://berlin.cityjsconf.org/",
-      "name": "City JS, Berlin",
-      "video": null,
-      "resources": null
-    }
-  },
+  //   {
+  //   "topic": "Making Interactions Accessible to All Users",
+  //   "topics": [
+  //     "Accessibility",
+  //   ],
+  //   "date": "2023-11-03",
+  //   "eventDetails": {
+  //     "url": "https://berlin.cityjsconf.org/",
+  //     "name": "City JS, Berlin",
+  //     "video": null,
+  //     "resources": null
+  //   }
+  // },
     {
     "topic": "Making Interactions Accessible to All Users",
     "topics": [
