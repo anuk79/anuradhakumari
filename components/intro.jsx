@@ -19,12 +19,12 @@ const toBase64 = (str) =>
     ? Buffer.from(str).toString('base64')
     : window.btoa(str);
 
+const about = {
+  "title": "Hi, I am Anuradha",
+  "subtitle": "A frontend developer, working towards making the web accessible, one website at a time.",
+};
+
 const Intro = () => {
-  const about = {
-    "title": "Hi, I am Anuradha",
-    "subtitle": "A frontend developer, working towards making the web accessible, one website at a time.",
-    "details": "I am working as a frontend consultant at [Passionate People](https://www.linkedin.com/company/passionatepeoplenl/mycompany/). I am also a \n[Google Developers Expert](https://developers.google.com/community/experts) for Web technologies, Cloudinary [Media Developer Expert](https://cloudinary.com/mde), Microsoft [Most Valuable Professional](https://mvp.microsoft.com/en-us/PublicProfile/5004678?fullName=Anuradha%20Kumari) for Developer Technologies, [Women Techmakers Ambassador](https://www.womentechmakers.com/ambassadors/profiles/62878f3f8807513825e4475f/anuradha_kumari) and an Accessibility Advocate.",
-  };
   return (
     <div className="flex">
       <div className="w-full sm:w-3/4 sm:pr-12">
