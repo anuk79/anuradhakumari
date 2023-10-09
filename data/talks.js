@@ -25,6 +25,19 @@ const talks = [
       "resources": null
     }
   },
+        {
+    "topic": "Making Interactions Accessible to All Users",
+    "topics": [
+      "Accessibility",
+    ],
+    "date": "2023-10-12",
+    "eventDetails": {
+      "url": "https://frontmania.com/",
+      "name": "Frontmania, Utrecht",
+      "video": null,
+      "resources": null
+    }
+  },
     {
     "topic": "Decoding web accessibility through testing",
     "topics": [
@@ -38,19 +51,7 @@ const talks = [
       "resources": null
     }
   },
-  //   {
-  //   "topic": "Making Interactions Accessible to All Users",
-  //   "topics": [
-  //     "Accessibility",
-  //   ],
-  //   "date": "2023-11-03",
-  //   "eventDetails": {
-  //     "url": "https://berlin.cityjsconf.org/",
-  //     "name": "City JS, Berlin",
-  //     "video": null,
-  //     "resources": null
-  //   }
-  // },
+
     {
     "topic": "Making Interactions Accessible to All Users",
     "topics": [
