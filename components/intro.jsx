@@ -38,7 +38,7 @@ const Intro = () => {
             {about.subtitle}
           </p>
           <p>
-            I am a senior frontend developer, with experience of more than 9.5 years. I have extensive experience in HTML, CSS, JavaScript, React, and Next JS with a focus on web accessibility, user experience, performance, and test-driven development.
+            I am a senior frontend developer, with experience of more than 10 years in tech. I have extensive experience in HTML, CSS, JavaScript, React, and Next JS with a focus on web accessibility, user experience, performance, and test-driven development.
             <br />
             I am also a {' '} <a href="https://developers.google.com/community/experts" target="_blank" rel="noopener noreferrer">Google Developers Expert</a> for Web technologies,
             <a href='https://cloudinary.com/mde' target="_blank" rel="noopener noreferrer">Cloudinary Media Developer Expert</a>, {' '}
