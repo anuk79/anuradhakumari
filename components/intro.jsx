@@ -40,8 +40,7 @@ const Intro = () => {
           <p>
             I am a senior frontend developer, with experience of more than 10 years in tech. I have extensive experience in HTML, CSS, JavaScript, React, and Next JS with a focus on web accessibility, user experience, performance, and test-driven development.
             <br />
-            I am also a {' '} <a href="https://developers.google.com/community/experts" target="_blank" rel="noopener noreferrer">Google Developers Expert</a> for Web technologies,
-            <a href='https://cloudinary.com/mde' target="_blank" rel="noopener noreferrer">Cloudinary Media Developer Expert</a>, {' '}
+            I am also a {' '} <a href="https://developers.google.com/community/experts" target="_blank" rel="noopener noreferrer">Google Developers Expert</a> for Web technologies, {' '}
             <a href="https://mvp.microsoft.com/en-us/PublicProfile/5004678?fullName=Anuradha%20Kumari" target="_blank" rel="noopener noreferrer">Microsoft Most Valuable Professional</a> for Developer Technologies, {' '}
             <a href="https://www.womentechmakers.com/ambassadors/profiles/62878f3f8807513825e4475f/anuradha_kumari" target="_blank" rel="noopener noreferrer">Women Techmakers Ambassador</a> {' '}
             and an Accessibility Advocate.
