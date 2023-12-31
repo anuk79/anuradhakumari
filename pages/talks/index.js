@@ -17,7 +17,7 @@ const Talks = ({ }) => {
       <section>
         <h1 className="text-4xl py-4 md:pt-12 font-bold">Tech talks</h1>
         <p className="py-4 text-lg">
-          I am passionate about exploring new technologies and sharing the knowledge and experience with the community.
+          I am passionate about exploring new technologies and sharing knowledge and experience with the community.
           I love the technical discussions and they motivate me to learn and explore further.
         </p>
       </section>
@@ -28,7 +28,7 @@ const Talks = ({ }) => {
           please <a href="mailto:contact@anuradhakumari.com">send me an email</a>.
         </div>
         <div className="pb-8 text-lg">
-          Feedbacks help in improvements. If you would like to give feedback for any of my
+          Feedbacks help in improvements. If you would like to give feedback on any of my
           talks, <Link href="https://forms.gle/DWntc1phDUPrAZBm7">
             <a>please fill the feedback form</a>
           </Link>
@@ -37,7 +37,7 @@ const Talks = ({ }) => {
       <section>
 
       </section>
-      <TalkCard talks={futureTalks} label={`Upcoming events (${futureTalks.length})`} />
+  {${futureTalks.length} > 0 && <TalkCard talks={futureTalks} label={`Upcoming events (${futureTalks.length})`} />}
       <TalkCard talks={pastTalks} label={`Past events (${pastTalks.length})`} />
     </div>
   );
