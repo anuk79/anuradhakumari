@@ -37,7 +37,7 @@ const Talks = ({ }) => {
       <section>
 
       </section>
-  {${futureTalks.length} > 0 && <TalkCard talks={futureTalks} label={`Upcoming events (${futureTalks.length})`} />}
+      {futureTalks.length > 0 && <TalkCard talks={futureTalks} label={`Upcoming events (${futureTalks.length})`} />}
       <TalkCard talks={pastTalks} label={`Past events (${pastTalks.length})`} />
     </div>
   );
