@@ -61,7 +61,7 @@ function Footer({ navLinks = links }) {
           Hosted on {' '} <a className="no-underline" href="https://www.netlify.com/">Netlify</a>{', and open-sourced on GitHub'} 
         </div>
         <p className="mt-8 text-base md:mt-0 py-4 text-center">
-        &copy; 2021-2023  Anuradha Kumari
+        &copy; 2021-2024  Anuradha Kumari
         </p>
     </footer>
   )
