@@ -11,7 +11,7 @@ Hi everyone, I hope you all had a wonderful start to the new year 2024. I postpo
 
 So 2023, well... here's to the year that 2023 has been 😇
 
-![A collage of 4 pictures of mine - first pic is me speaking on stage of Front Conference Zurich; second pic is me stiing on the Iron throne replica of Game of thrones series; thirs pic is me in a pink Anarkali dress standing in front of Bibi ka maqbara; fourth pic is me speaking on stage of React Summit Amsterdam](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3bpd1s072ibi8a9gvkc3.png)
+![A collage of 4 pictures of mine - the first pic is me speaking on the stage at Front Conference Zurich; the second pic is me sitting on the Iron Throne replica of the Game of Thrones series; the third pic is me in a pink Anarkali dress standing in front of Bibi ka maqbara; fourth pic is me speaking on the stage of React Summit Amsterdam](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3bpd1s072ibi8a9gvkc3.png)
 
 ## Gratitude
 
