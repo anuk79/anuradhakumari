@@ -1,5 +1,5 @@
 ---
-title: Exploring the Charm of Ghent: A Journey Through Picturesque Delights
+title: 'Exploring the Charm of Ghent: A Journey Through Picturesque Delights'
 author: Anuradha Kumari
 published: '2023-01-24'
 category: blog
