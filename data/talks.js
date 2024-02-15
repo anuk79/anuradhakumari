@@ -1,5 +1,19 @@
 const talks = [
     {
+    "topic": "Accessibility driven development",
+    "topics": [
+      "Accessibility",
+      "Workshop"
+    ],
+    "date": "2024-03-20",
+    "eventDetails": {
+      "url": "https://conferences.codemotion.com/ita24-workshop-fest/",
+      "name": "Codemotion Workshop Fest",
+      "video": null,
+      "resources": null
+    }
+  },
+    {
     "topic": "Learn Next.js: Develop Scalable and High Performance Web Applications",
     "topics": [
       "NextJS",
