@@ -1,4 +1,47 @@
 const talks = [
+    
+    {
+    "topic": "Unleashing the Power of Developer Tools for Web Accessibility Testing",
+    "topics": [
+      "Accessibility",
+      "DevTools
+    ],
+    "date": "2024-05-22",
+    "eventDetails": {
+      "url": "https://conference.teqnation.com/",
+      "name": "TEQnation, Utrecht",
+      "video": null,
+      "resources": null
+    }
+  },
+    {
+    "topic": "Hidden gems of Chrome devtools for a11y testing",
+    "topics": [
+      "Accessibility",
+      "DevTools
+    ],
+    "date": "2024-04-17",
+    "eventDetails": {
+      "url": "https://www.meetup.com/advancedjs-amsterdam/events/298326977/",
+      "name": "AdvancedJS meetup, Amsterdam",
+      "video": null,
+      "resources": null
+    }
+  },
+    {
+    "topic": "Learn Next.js: with App routes and RSC",
+    "topics": [
+      "NextJS",
+      "Workshop"
+    ],
+    "date": "2024-04-03",
+    "eventDetails": {
+      "url": "https://learning.oreilly.com/live-events/learn-nextjs-develop-scalable-and-high-performance-web-applications/0636920081393/",
+      "name": "O'Reilly Workshop",
+      "video": null,
+      "resources": null
+    }
+  },
     {
     "topic": "Accessibility driven development",
     "topics": [
@@ -14,7 +57,7 @@ const talks = [
     }
   },
     {
-    "topic": "Learn Next.js: Develop Scalable and High Performance Web Applications",
+    "topic": "Learn Next.js: Develop Scalable and High-Performance Web Applications",
     "topics": [
       "NextJS",
       "Workshop"
