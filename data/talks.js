@@ -4,7 +4,7 @@ const talks = [
     "topic": "Unleashing the Power of Developer Tools for Web Accessibility Testing",
     "topics": [
       "Accessibility",
-      "DevTools
+      "DevTools",
     ],
     "date": "2024-05-22",
     "eventDetails": {
@@ -18,7 +18,7 @@ const talks = [
     "topic": "Hidden gems of Chrome devtools for a11y testing",
     "topics": [
       "Accessibility",
-      "DevTools
+      "DevTools",
     ],
     "date": "2024-04-17",
     "eventDetails": {
@@ -32,7 +32,7 @@ const talks = [
     "topic": "Learn Next.js: with App routes and RSC",
     "topics": [
       "NextJS",
-      "Workshop"
+      "Workshop",
     ],
     "date": "2024-04-03",
     "eventDetails": {
