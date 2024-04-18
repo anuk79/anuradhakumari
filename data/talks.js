@@ -1,5 +1,18 @@
 const talks = [
-    
+     {
+    "topic": "Unleashing the Power of Developer Tools for Web Accessibility Testing",
+    "topics": [
+      "Accessibility",
+      "DevTools",
+    ],
+    "date": "2024-07-17",
+    "eventDetails": {
+      "url": "https://www.middlesbroughfe.co.uk/",
+      "name": "Middlesbrough Front End, UK",
+      "video": null,
+      "resources": null
+    }
+  },
     {
     "topic": "Unleashing the Power of Developer Tools for Web Accessibility Testing",
     "topics": [
