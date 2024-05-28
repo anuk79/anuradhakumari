@@ -12,6 +12,19 @@ const talks = [
       "video": null,
       "resources": null
     }
+  },{
+    "topic": "Unleashing the Power of Developer Tools for Web Accessibility Testing",
+    "topics": [
+      "Accessibility",
+      "DevTools",
+    ],
+    "date": "2024-06-14",
+    "eventDetails": {
+      "url": "https://www.devconf.info/cz/",
+      "name": "DevConf, Brno",
+      "video": null,
+      "resources": null
+    }
   },
     {
     "topic": "Unleashing the Power of Developer Tools for Web Accessibility Testing",
