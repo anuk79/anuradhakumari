@@ -5,6 +5,34 @@ const talks = [
       "Accessibility",
       "DevTools",
     ],
+    "date": "2024-11-07",
+    "eventDetails": {
+      "url": "https://oredev.org/",
+      "name": "Øredev Developer Conference, Sweden",
+      "video": null,
+      "resources": null
+    }
+  },
+    {
+    "topic": "Learn Next.js: with App routes and RSC",
+    "topics": [
+      "NextJS",
+      "Workshop",
+    ],
+    "date": "2024-09-06",
+    "eventDetails": {
+      "url": "https://learning.oreilly.com/live-events/learn-nextjs-develop-scalable-and-high-performance-web-applications/0636920081393/",
+      "name": "O'Reilly Workshop",
+      "video": null,
+      "resources": null
+    }
+  },
+     {
+    "topic": "Unleashing the Power of Developer Tools for Web Accessibility Testing",
+    "topics": [
+      "Accessibility",
+      "DevTools",
+    ],
     "date": "2024-07-17",
     "eventDetails": {
       "url": "https://www.middlesbroughfe.co.uk/",
