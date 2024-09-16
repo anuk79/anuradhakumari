@@ -5,10 +5,36 @@ const talks = [
       "Accessibility",
       "DevTools",
     ],
+    "date": "2024-11-29",
+    "eventDetails": {
+      "url": "https://greece.cityjsconf.org/",
+      "name": "CityJS, Athens",
+      "video": null,
+      "resources": null
+    }
+  },{
+    "topic": "Unleashing the Power of Developer Tools for Web Accessibility Testing",
+    "topics": [
+      "Accessibility",
+      "DevTools",
+    ],
     "date": "2024-11-07",
     "eventDetails": {
       "url": "https://oredev.org/",
       "name": "Øredev Developer Conference, Sweden",
+      "video": null,
+      "resources": null
+    }
+  },{
+    "topic": "Unleashing the Power of Developer Tools for Web Accessibility Testing",
+    "topics": [
+      "Accessibility",
+      "DevTools",
+    ],
+    "date": "2024-10-25",
+    "eventDetails": {
+      "url": "https://www.devfesthr.com/",
+      "name": "DevFest, Zagreb",
       "video": null,
       "resources": null
     }
