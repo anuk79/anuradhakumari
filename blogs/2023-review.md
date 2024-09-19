@@ -1,7 +1,7 @@
 ---
 title: Thank you 2023, onwards to 2024
 author: Anuradha Kumari
-published: '2023-01-06'
+published: '2024-01-06'
 category: blog
 topics: [Year in review, Life]
 excerpt: ''
