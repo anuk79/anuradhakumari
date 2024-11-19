@@ -210,11 +210,17 @@ const articles = {
             url: 'https://www.matuzo.at/blog/2022/focus-outline/',
             displayText: 'Outline is your friend',
         },
+    ],
+    '2024': [
+        {
+            url: 'https://www.sarasoueidan.com/blog/testing-environment-setup/',
+            displayText: 'Setting up a screen reader testing environment on your computer',
+        },
         // {
         //     url: '',
         //     displayText: '',
         // },
-    ],
+    ]
 }
 
 const ReadingList = () => {
@@ -257,7 +263,7 @@ const ReadingList = () => {
             <section id="articles">
                 <h2 className="pt-4 pb-2 text-3xl font-bold">Articles</h2>
                 <p className="text-lg">
-                    Below contains list of articles that I enjoyed reading and maintaining this list will
+                    Below contains list of articles by authors around the world that I enjoyed reading and maintaining this list will
                     help me to revisit these later as well as could be a source of reference for anyone who might find them useful.
                     If you came here and found something interesting, I would be happy to know about it.
                 </p>
