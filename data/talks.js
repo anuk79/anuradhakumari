@@ -1,5 +1,18 @@
 const talks = [
      {
+    "topic": "Making Interactions Accessible to All Users",
+    "topics": [
+      "Accessibility",
+    ],
+    "date": "2025-02-04",
+    "eventDetails": {
+      "url": "https://swetugg.se/sthlm-2025",
+      "name": "Swetugg, Stockholm",
+      "video": null,
+      "resources": null
+    }
+  },
+     {
     "topic": "Unleashing the Power of Developer Tools for Web Accessibility Testing",
     "topics": [
       "Accessibility",
