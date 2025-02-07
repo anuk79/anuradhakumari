@@ -46,3 +46,10 @@ export function getAllPosts(fields = ['slug', 'title', 'published', 'category'],
     .sort((post1, post2) => (post1.published > post2.published ? -1 : 1));
   return posts;
 }
+
+export function getLatestPosts(fields = ['slug', 'title', 'published', 'category'], category = 'blog') {
+  const slugs = getPostSlugs();
+  const posts = getAllPosts();
+  
+  return posts.slice(0,3);
+}
