@@ -1,5 +1,18 @@
 const talks = [
      {
+    "topic": "Breaking Barriers - Web Accessibility Through Testing",
+    "topics": [
+      "Accessibility, Testing",
+    ],
+    "date": "2025-03-06",
+    "eventDetails": {
+      "url": "https://www.meetup.com/utrecht-javascript-meetup/events/306007917/",
+      "name": "Utrecht JavaScript Meetup",
+      "video": null,
+      "resources": null
+    }
+  },
+     {
     "topic": "Making Interactions Accessible to All Users",
     "topics": [
       "Accessibility",
