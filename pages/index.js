@@ -6,13 +6,14 @@ import VideoCard from '../components/videoCard';
 import { getRecentBlogs } from '../queries/getBlogs';
 import talks from '../data/talks';
 import videos from '../data/videos';
+import { getLatestPosts } from '../utils/api';
 
 export async function getStaticProps() {
-  const blogPosts = await getRecentBlogs();
+  const posts = await getLatestPosts();
 
   return {
     props: {
-      posts: Object.values(blogPosts).filter(blog => blog.category !== 'TIL'),
+      posts,
     },
   };
 }
