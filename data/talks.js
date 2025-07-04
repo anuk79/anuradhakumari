@@ -1,5 +1,18 @@
 const talks = [
      {
+    "topic": "Accessibility Leadership",
+    "topics": [
+      "Accessibility, Leadership",
+    ],
+    "date": "2025-05-14",
+    "eventDetails": {
+      "url": "https://www.youtube.com/watch?v=It60mMVZHpI",
+      "name": "Focus trap with Tim Damen",
+      "video": null,
+      "resources": null
+    }
+  },
+     {
     "topic": "Breaking Barriers - Web Accessibility Through Testing",
     "topics": [
       "Accessibility, Testing",
