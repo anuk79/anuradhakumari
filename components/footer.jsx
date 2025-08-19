@@ -55,9 +55,8 @@ function Footer({ navLinks = links }) {
         </div>
         <div className="py-6 text-center">
           Made using{' '} 
-          <a className="no-underline" href="https://nextjs.org/">NextJS</a>,
-          {' '}  <a className="no-underline" href="https://graphcms.com/">GraphCMS</a> {' '} 
-          and{' '}  <a className="no-underline" href="https://tailwindcss.com/">Tailwind CSS</a>. 
+          <a className="no-underline" href="https://nextjs.org/">NextJS</a>
+          {', '}<a className="no-underline" href="https://tailwindcss.com/">Tailwind CSS</a>. 
           Hosted on {' '} <a className="no-underline" href="https://www.netlify.com/">Netlify</a>{', and open-sourced on GitHub'} 
         </div>
         <p className="mt-8 text-base md:mt-0 py-4 text-center">
