@@ -5,7 +5,6 @@
 ## Tech stack
 ### Coding
 - Next.js
-- GraphCMS
 - GraphQL
 - Remark
 - TailwindCSS
