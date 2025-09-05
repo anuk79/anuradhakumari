@@ -22,7 +22,7 @@ const Talks = ({ }) => {
         </p>
       </section>
       <section>
-        <h2 className="text-3xl pt-4 pb-2 font-bold">Currently accepting speaking invitations for 2025</h2>
+        <h2 className="text-3xl pt-4 pb-2 font-bold">Accepting speaking invitations for 2026</h2>
         <div className="py-4 text-lg">
           If you’d like to invite me to speak at your event,
           please <a href="mailto:contact@anuradhakumari.com">send me an email</a>.
