@@ -3,10 +3,6 @@ import SvgIcons from './Icons';
 
 const links = [
   {
-    "label": "Twitter",
-    "url": "https://twitter.com/miracle_404"
-  },
-  {
     "label": "LinkedIn",
     "url": "https://www.linkedin.com/in/anuradha15/"
   },
@@ -60,7 +56,7 @@ function Footer({ navLinks = links }) {
           Hosted on {' '} <a className="no-underline" href="https://www.netlify.com/">Netlify</a>{', and open-sourced on GitHub'} 
         </div>
         <p className="mt-8 text-base md:mt-0 py-4 text-center">
-        &copy; 2021-2025  Anuradha Kumari
+        &copy; 2021-2025 Anuradha Kumari
         </p>
     </footer>
   )

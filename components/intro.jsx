@@ -29,7 +29,7 @@ const Intro = () => {
     <div className="flex">
       <div className="w-full sm:w-3/4 sm:pr-12">
         <div className="w-full sm:hidden flex justify-around pb-4">
-          <Image width="150" height="150" src="/android-chrome-512x512.png" alt=""
+          <Image width="150" height="150" src="/android-chrome-512x512.png" placeholder="blur" alt=""
           />
         </div>
         <div>
@@ -38,7 +38,7 @@ const Intro = () => {
             {about.subtitle}
           </p>
           <p>
-            I am a senior frontend developer, with experience of more than 10 years in tech. I have extensive experience in HTML, CSS, JavaScript, React, and Next JS with a focus on web accessibility, user experience, performance, and test-driven development.
+            I am a senior frontend developer, with experience of more than 11.5 years in tech. I have extensive experience in HTML, CSS, JavaScript, React, Next JS, Vue and Nuxt JS with a focus on web accessibility, user experience, performance, and test-driven development.
             <br />
             I am also a {' '} <a href="https://developers.google.com/community/experts" target="_blank" rel="noopener noreferrer">Google Developers Expert</a> for Web technologies, {' '}
             <a href="https://mvp.microsoft.com/en-us/PublicProfile/5004678?fullName=Anuradha%20Kumari" target="_blank" rel="noopener noreferrer">Microsoft Most Valuable Professional</a> for Developer Technologies, {' '}
@@ -48,7 +48,7 @@ const Intro = () => {
         </div>
       </div>
       <div className="sm:w-1/4 hidden sm:block">
-        <Image width="200" height="200" src="/android-chrome-512x512.png" alt=""
+        <Image width="200" height="200" src="/android-chrome-512x512.png" alt="" placeholder="blur"
         />
       </div>
     </div>
