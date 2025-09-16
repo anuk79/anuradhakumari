@@ -3,7 +3,6 @@ import Intro from '../components/intro';
 import TalkCard from '../components/talkCard';
 import BlogCard from '../components/blogCard';
 import VideoCard from '../components/videoCard';
-import { getRecentBlogs } from '../queries/getBlogs';
 import talks from '../data/talks';
 import videos from '../data/videos';
 import { getLatestPosts } from '../utils/api';
@@ -40,7 +39,7 @@ export default function Home({ posts }) {
       <div className="py-4 w-full">
         <h2 className="py-4 text-3xl font-bold">I read</h2>
         <p className="pb-4 text-lg">
-          List of books that I have read since 2021 and articles that I enjoyed reading and learned from since start of 2022.
+          List of books that I have read since 2021 and articles that I enjoyed reading and learned from since the start of 2022
         </p>
         <Link href="/reading-list"><a className="text-lg mb-8 pl-0 lg:mb-0">My reading list</a></Link>
       </div>
