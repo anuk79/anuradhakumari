@@ -2,7 +2,8 @@ const talks = [
      {
     "topic": "Accessibility Leadership",
     "topics": [
-      "Accessibility, Leadership",
+      "Accessibility",
+      "Leadership",
     ],
     "date": "2025-05-14",
     "eventDetails": {
@@ -15,7 +16,8 @@ const talks = [
      {
     "topic": "Breaking Barriers - Web Accessibility Through Testing",
     "topics": [
-      "Accessibility, Testing",
+      "Accessibility",
+      "Testing",
     ],
     "date": "2025-03-06",
     "eventDetails": {
