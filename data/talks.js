@@ -1,5 +1,34 @@
 const talks = [
      {
+    "topic": "Chrome dev tools - a powerhouse of accessibility testing",
+    "topics": [
+      "Accessibility",
+      "DevTools",
+      "Testing",
+    ],
+    "date": "2025-11-22",
+    "eventDetails": {
+      "url": "https://gdg.community.dev/events/details/google-gdg-torino-presents-devfest-alps-2025/",
+      "name": "Devfest Alps",
+      "video": null,
+      "resources": null
+    }
+  },
+     {
+    "topic": "From barriers to bridges - making the web accessible",
+    "topics": [
+      "Accessibility",
+      "Inclusion",
+    ],
+    "date": "2025-11-07",
+    "eventDetails": {
+      "url": "https://www.ilionxdevdays.com/",
+      "name": "ilionxdevdays",
+      "video": null,
+      "resources": null
+    }
+  },
+     {
     "topic": "Accessibility Leadership",
     "topics": [
       "Accessibility",
