@@ -1,5 +1,20 @@
 const talks = [
      {
+    "topic": "Unleashing the Power of Chrome devtools for Web Accessibility Testing",
+    "topics": [
+      "Accessibility",
+      "DevTools",
+      "Testing",
+    ],
+    "date": "2025-11-22",
+    "eventDetails": {
+      "url": "https://gdg.community.dev/events/details/google-gdg-yangon-presents-devfest-yangon-2025-online/",
+      "name": "Devfest Yangon",
+      "video": null,
+      "resources": null
+    }
+  },
+     {
     "topic": "Chrome dev tools - a powerhouse of accessibility testing",
     "topics": [
       "Accessibility",
