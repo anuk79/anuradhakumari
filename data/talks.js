@@ -6,6 +6,21 @@ const talks = [
       "DevTools",
       "Testing",
     ],
+    "date": "2025-11-29",
+    "eventDetails": {
+      "url": "https://gdg.community.dev/events/details/google-gdg-lisbon-presents-devfest-lisbon-2025/",
+      "name": "Devfest Lisbon",
+      "video": null,
+      "resources": null
+    }
+  },
+     {
+    "topic": "Unleashing the Power of Chrome devtools for Web Accessibility Testing",
+    "topics": [
+      "Accessibility",
+      "DevTools",
+      "Testing",
+    ],
     "date": "2025-11-22",
     "eventDetails": {
       "url": "https://gdg.community.dev/events/details/google-gdg-yangon-presents-devfest-yangon-2025-online/",
