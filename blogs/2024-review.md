@@ -1,7 +1,7 @@
 ---
 title: Grateful for 2024, Inspired for 2025
 author: Anuradha Kumari
-published: '2024-02-07'
+published: '2025-02-07'
 category: blog
 topics: [Year in review, Life]
 excerpt: ''
