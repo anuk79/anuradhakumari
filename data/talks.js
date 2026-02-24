@@ -1,5 +1,33 @@
 const talks = [
      {
+    "topic": "Interactions that work for all users",
+    "topics": [
+      "Accessibility",
+      "web",
+    ],
+    "date": "2026-03-27",
+    "eventDetails": {
+      "url": "https://devconf.nl/",
+      "name": "Devconf Heerlan",
+      "video": null,
+      "resources": null
+    }
+  },
+     {
+    "topic": "Interactions that work for all users",
+    "topics": [
+      "Accessibility",
+      "web",
+    ],
+    "date": "2026-03-13",
+    "eventDetails": {
+      "url": "https://webdevcon.nl/",
+      "name": "WEBDEVCON Amsterdam",
+      "video": null,
+      "resources": null
+    }
+  },
+     {
     "topic": "Unleashing the Power of Chrome devtools for Web Accessibility Testing",
     "topics": [
       "Accessibility",
