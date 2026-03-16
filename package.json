@@ -26,5 +26,8 @@
     "next-sitemap": "^1.6.168",
     "postcss": "^8.3.6",
     "tailwindcss": "^2.2.7"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
