@@ -6,28 +6,22 @@
     "dev": "next dev",
     "build": "next build",
     "postbuild": "next-sitemap --config ./sitemap.js",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
   },
   "dependencies": {
     "graphql": "^15.5.1",
     "graphql-request": "^3.5.0",
+    "gray-matter": "^4.0.3",
     "next": "11.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "gray-matter": "^4.0.3",
     "remark": "^13.0.0",
     "remark-html": "^13.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.1",
-    "eslint": "7.32.0",
-    "eslint-config-next": "11.0.1",
     "next-sitemap": "^1.6.168",
     "postcss": "^8.3.6",
     "tailwindcss": "^2.2.7"
-  },
-  "engines": {
-    "node": ">=18"
   }
 }
