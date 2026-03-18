@@ -39,9 +39,16 @@ export default function Home({ posts }) {
       <div className="py-4 w-full">
         <h2 className="py-4 text-3xl font-bold">I read</h2>
         <p className="pb-4 text-lg">
-          List of books that I have read since 2021 and articles that I enjoyed reading and learned from since the start of 2022
+          I enjoy reading, it gives me perspectives from all around the world. For past few years, I have maintained my reading profile on goodreads.
         </p>
         <Link href="/reading-list"><a className="text-lg mb-8 pl-0 lg:mb-0">My reading list</a></Link>
+      </div>
+      <div className="py-4 w-full">
+        <h2 className="py-4 text-3xl font-bold">I travel</h2>
+        <p className="pb-4 text-lg">
+          Travel nourishes my soul, visiting new places, meeting new people, exploring different cultures, history, food and way of living, these are the aspects of travelling that make my life rich with experiences.
+        </p>
+        <p>I am from India, currently based in the Netherlands. So far I have travelled to: France, Germany, Italy, Vatican City, Switzerland, Luxembourg, Austria, Czech Republic, Spain, Portugal, Croatia, Norway, Sweden, Bulgaria, Scotland, England, South Korea.</p>
       </div>
     </section>
   );
