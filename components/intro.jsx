@@ -29,8 +29,7 @@ const Intro = () => {
     <div className="flex">
       <div className="w-full sm:w-3/4 sm:pr-12">
         <div className="w-full sm:hidden flex justify-around pb-4">
-          <Image width="150" height="150" src="/android-chrome-512x512.png" placeholder="blur" alt=""
-          />
+          <img width="150" height="150" src="/android-chrome-512x512.png" alt="" />
         </div>
         <div>
           <h1 className="pr-4 text-3xl md:text-4xl font-bold text-center sm:text-left">{about.title}</h1>
