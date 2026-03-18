@@ -13,7 +13,10 @@ const ImageCard = ({ data, label, headerTag }) => {
                             <div className="py-4 flex flex-col justify-between leading-normal">
                                 <Link href={detail.link.url}>
                                     <a aria-label={detail.link.displayText}>
-                                        <Image width="280" height="170" src={detail.coverImage?.url} alt="" loading="lazy" placeholder="blur" />
+                                        {detail.coverImage?.url ? 
+                                            <Image width="280" height="170" src={detail.coverImage?.url} alt="" loading="lazy" placeholder="blur" />
+                                            : detail.link.displayText
+                                        }
                                     </a>
                                 </Link>
                             </div>
