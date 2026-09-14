@@ -1,8 +1,7 @@
 import Head from 'next/head';
 import List from "../../components/list";
 
-const data = {
-    Hardware: [
+const data = [
         {
             displayText: 'Speak on a stage',
         },
@@ -126,8 +125,7 @@ const data = {
         {
             displayText: '',
         },
-    ],
-}
+    ];
 
 const Uses = () => {
     return (
