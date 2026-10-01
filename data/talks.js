@@ -5,6 +5,34 @@ const talks = [
       "Accessibility",
       "web",
     ],
+    "date": "2026-10-17",
+    "eventDetails": {
+      "url": "https://hamburg.devfest.de/speakers",
+      "name": "Devfest Hamburg",
+      "video": null,
+      "resources": null
+    }
+  },
+     {
+    "topic": "Interactions that work for all users",
+    "topics": [
+      "Accessibility",
+      "web",
+    ],
+    "date": "2026-10-30",
+    "eventDetails": {
+      "url": "https://devfest.cz/agenda",
+      "name": "Devfest Prague",
+      "video": null,
+      "resources": null
+    }
+  },
+     {
+    "topic": "Interactions that work for all users",
+    "topics": [
+      "Accessibility",
+      "web",
+    ],
     "date": "2026-03-27",
     "eventDetails": {
       "url": "https://devconf.nl/",
