@@ -21,7 +21,7 @@ const toBase64 = (str) =>
 
 const about = {
   "title": "Hi, I am Anuradha",
-  "subtitle": "A frontend developer, working towards making the web accessible, one website at a time.",
+  "subtitle": "Senior Software Developer | International tech speaker | Keynote Speaker",
 };
 
 const Intro = () => {
@@ -36,13 +36,14 @@ const Intro = () => {
           <p className="pt-8 text-lg font-semibold">
             {about.subtitle}
           </p>
+          <p>Working towards making the web accessible, one website at a time.</p>
           <p>
-            I am a senior frontend developer, with experience of more than 13.5 years in tech. I have extensive experience in HTML, CSS, JavaScript, React, Next JS, Vue and Nuxt JS with a focus on web accessibility, user experience, performance, and test-driven development.
+            I am a senior frontend developer, with experience of more than 13 years in tech. I have extensive experience in HTML, CSS, JavaScript, React, Next JS, Vue and Nuxt JS with a focus on web accessibility, user experience, performance, and test-driven development.
             <br />
             I am also a {' '} <a href="https://developers.google.com/community/experts" target="_blank" rel="noopener noreferrer">Google Developers Expert</a> for Web technologies, {' '}
             <a href="https://mvp.microsoft.com/en-us/PublicProfile/5004678?fullName=Anuradha%20Kumari" target="_blank" rel="noopener noreferrer">Microsoft Most Valuable Professional</a> for Developer Technologies, {' '}
             <a href="https://www.womentechmakers.com/ambassadors/profiles/62878f3f8807513825e4475f/anuradha_kumari" target="_blank" rel="noopener noreferrer">Women Techmakers Ambassador</a> {' '}
-            and an Accessibility Advocate.
+            and an Accessibility Advocate. 
           </p>
         </div>
       </div>
