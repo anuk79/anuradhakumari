@@ -5,6 +5,48 @@ const talks = [
       "Accessibility",
       "web",
     ],
+    "date": "2026-11-29",
+    "eventDetails": {
+      "url": "https://gdg.community.dev/events/details/google-gdg-yangon-presents-devfest-yangon-2026/",
+      "name": "Devfest Yangon",
+      "video": null,
+      "resources": null
+    }
+  },
+     {
+    "topic": "Interactions that work for all users",
+    "topics": [
+      "Accessibility",
+      "web",
+    ],
+    "date": "2026-11-28",
+    "eventDetails": {
+      "url": "https://gdg.community.dev/events/details/google-gdg-skopje-presents-devfest-skopje-2026-1/",
+      "name": "Devfest Skopje",
+      "video": null,
+      "resources": null
+    }
+  },
+     {
+    "topic": "Syntax of Belonging: Inclusive Language in Tech",
+    "topics": [
+      "Keynote",
+      "Inclusive language",
+    ],
+    "date": "2026-11-14",
+    "eventDetails": {
+      "url": "https://gdg.community.dev/events/details/google-gdg-kenora-presents-devfest-kenora-shaping-the-future-together/",
+      "name": "Devfest Kenora",
+      "video": null,
+      "resources": null
+    }
+  },
+     {
+    "topic": "Interactions that work for all users",
+    "topics": [
+      "Accessibility",
+      "web",
+    ],
     "date": "2026-10-17",
     "eventDetails": {
       "url": "https://hamburg.devfest.de/speakers",
